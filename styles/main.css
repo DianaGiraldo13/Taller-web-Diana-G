@@ -111,4 +111,26 @@ nav {
   opacity: 0.6;
   text-decoration: none;
 }
+
+.contenedor__elegir {
+  background-color: #ead1bd;
+  min-height: 60vh;
+}
+
+.h1__porque {
+  padding-top: 15px;
+  color: #474747;
+  padding-left: 450px;
+}
+
+.contenedor__cuadros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imagen__cuadro1 {
+  padding-left: 40px;
+  padding-top: 30px;
+}
 /*# sourceMappingURL=main.css.map */
