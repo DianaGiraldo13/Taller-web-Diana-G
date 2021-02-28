@@ -3,6 +3,17 @@
     src: url("perpetua-titling-mt-bold.ttf");
 }
 
+@font-face{
+    font-family: Roboto1;
+    src: url("Roboto-Bold.ttf");
+
+}
+
+@font-face{
+    font-family: Roboto2;
+    src: url("Roboto-Regular.ttf");
+}
+
 .contenedor{
     width: 100%;
     background-color: rgb(248, 240, 237);
@@ -27,6 +38,7 @@
     margin-left: 5%;
     text-decoration: none;
     color: #3F3F3F;
+    font-family: "perpetua";
 }
 
 .imagen__carro{
@@ -34,17 +46,6 @@
     border: none;
     cursor: pointer;
 }
-
-nav{
-    font-family: "perpetua";
-    display: flex;
-    font-size: 140%;
-    color: #474747;
-    padding: 26px 150px; 
-    width: auto;   
-
-}
-
 
 .contenedor__banner{
     background-color: rgb(255, 255, 255);
@@ -67,6 +68,7 @@ nav{
     padding-top: 40%;
 }
 
+
 .imagen__flechaizq{
     padding-top: 40%;
     
@@ -78,12 +80,14 @@ nav{
 }
 
 .h1__titulo{
+    font-family: "perpetua";
     padding-left: 100px;
     color: #474747;
     
 }
 
 .h2__parrafo{
+    font-family: "perpetua";
     padding-top: 30px;
     padding-left: 95px;
     color: #474747;
@@ -103,6 +107,7 @@ nav{
     background-color: #ECCBA3;
     border-radius: 6px;
     margin-left: 10%;
+    font-family: "perpetua";
     
 }
 
@@ -116,29 +121,46 @@ nav{
 
 .contenedor__elegir{
     background-color: rgb(234,209, 189);
-    min-height: 60vh;
-    
-    
-
+    min-height: 61vh;
+    text-align: center;
 }
 
 .h1__porque{
-    padding-top: 15px;
     color: #474747;
-    padding-left: 450px;
-
+    font-family: "perpetua";
+    padding-top: 2%;
 }
 
 .contenedor__cuadros{
     display: flex;
-
-}
-
-.imagen__cuadro1{
-    padding-left: 40px;
-    padding-top: 30px;
+    padding-left: 13%;
 }
 
 
+.imagen__cuadro{
+    border-radius:22px;
     
+}
+
+.item{
+    justify-content: center;
+    background-color: white;
+    border-radius: 5%;
+    margin: 2%;
+}
+
+.texto__fotos{
+    text-align: center;
+    color: #474747;
+    font-family: "Roboto1";
+    border-radius:0px 0px 22px 22px;
+    margin-top: 2%;
     
+     
+}
+
+
+
+    
+
+

@@ -3,6 +3,16 @@
   src: url("perpetua-titling-mt-bold.ttf");
 }
 
+@font-face {
+  font-family: Roboto1;
+  src: url("Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: Roboto2;
+  src: url("Roboto-Regular.ttf");
+}
+
 .contenedor {
   width: 100%;
   background-color: #f8f0ed;
@@ -31,23 +41,13 @@
   margin-left: 5%;
   text-decoration: none;
   color: #3F3F3F;
+  font-family: "perpetua";
 }
 
 .imagen__carro {
   margin-left: 5%;
   border: none;
   cursor: pointer;
-}
-
-nav {
-  font-family: "perpetua";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 140%;
-  color: #474747;
-  padding: 26px 150px;
-  width: auto;
 }
 
 .contenedor__banner {
@@ -82,11 +82,13 @@ nav {
 }
 
 .h1__titulo {
+  font-family: "perpetua";
   padding-left: 100px;
   color: #474747;
 }
 
 .h2__parrafo {
+  font-family: "perpetua";
   padding-top: 30px;
   padding-left: 95px;
   color: #474747;
@@ -105,6 +107,7 @@ nav {
   background-color: #ECCBA3;
   border-radius: 6px;
   margin-left: 10%;
+  font-family: "perpetua";
 }
 
 .boton__suscribirme:hover {
@@ -114,23 +117,41 @@ nav {
 
 .contenedor__elegir {
   background-color: #ead1bd;
-  min-height: 60vh;
+  min-height: 61vh;
+  text-align: center;
 }
 
 .h1__porque {
-  padding-top: 15px;
   color: #474747;
-  padding-left: 450px;
+  font-family: "perpetua";
+  padding-top: 2%;
 }
 
 .contenedor__cuadros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 13%;
 }
 
-.imagen__cuadro1 {
-  padding-left: 40px;
-  padding-top: 30px;
+.imagen__cuadro {
+  border-radius: 22px;
+}
+
+.item {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border-radius: 5%;
+  margin: 2%;
+}
+
+.texto__fotos {
+  text-align: center;
+  color: #474747;
+  font-family: "Roboto1";
+  border-radius: 0px 0px 22px 22px;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=main.css.map */
