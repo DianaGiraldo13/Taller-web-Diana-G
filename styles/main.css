@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: perpetua;
   src: url("perpetua-titling-mt-bold.ttf");
@@ -69,11 +70,7 @@
   display: flex;
 }
 
-.imagen__flechader {
-  padding-top: 40%;
-}
-
-.imagen__flechaizq {
+.imagen__flecha {
   padding-top: 40%;
 }
 
@@ -153,5 +150,42 @@
   font-family: "Roboto1";
   border-radius: 0px 0px 22px 22px;
   margin-top: 2%;
+}
+
+.contenedor__comentarios {
+  background-color: #f8f0ed;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor__reseñas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #c79d7c;
+  width: 300px;
+  padding: 25px;
+  margin-top: 5%;
+  border-radius: 20px;
+  height: 70px;
+  margin-left: 16%;
+}
+
+.texto__reseñas {
+  font-family: "Roboto1";
+  margin-left: 10%;
+  margin-top: 1%;
+  font-size: 114%;
+  color: white;
+}
+
+.contenedorimagenes__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40%;
+  padding-right: 50%;
 }
 /*# sourceMappingURL=main.css.map */
