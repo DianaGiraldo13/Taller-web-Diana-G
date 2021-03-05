@@ -114,7 +114,7 @@
 
 .contenedor__elegir {
   background-color: #ead1bd;
-  min-height: 61vh;
+  min-height: 70vh;
   text-align: center;
 }
 
@@ -147,14 +147,14 @@
 .texto__fotos {
   text-align: center;
   color: #474747;
-  font-family: "Roboto1";
+  font-family: "perpetua";
   border-radius: 0px 0px 22px 22px;
   margin-top: 2%;
 }
 
 .contenedor__comentarios {
   background-color: #f8f0ed;
-  min-height: 90vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,10 +174,10 @@
 }
 
 .texto__reseñas {
-  font-family: "Roboto1";
+  font-family: "perpetua";
   margin-left: 10%;
   margin-top: 1%;
-  font-size: 114%;
+  font-size: 117%;
   color: white;
 }
 
@@ -187,5 +187,26 @@
   display: flex;
   padding-top: 40%;
   padding-right: 50%;
+}
+
+.contenedor__publicidad {
+  background-color: #ead1bd;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.contenedor__imagenpubl {
+  padding-left: 3%;
+  padding-top: 6%;
+}
+
+.contenedor__textopubl {
+  padding-top: 13%;
+  padding-left: 7%;
+  font-family: "perpetua";
+  color: #3f3f3f;
 }
 /*# sourceMappingURL=main.css.map */
