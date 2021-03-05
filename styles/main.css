@@ -191,7 +191,7 @@
 
 .contenedor__publicidad {
   background-color: #ead1bd;
-  min-height: 90vh;
+  min-height: 73vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,13 +200,25 @@
 
 .contenedor__imagenpubl {
   padding-left: 3%;
-  padding-top: 6%;
+  padding-top: 4%;
 }
 
 .contenedor__textopubl {
-  padding-top: 13%;
-  padding-left: 7%;
+  padding-top: 11%;
+  padding-left: 9%;
   font-family: "perpetua";
   color: #3f3f3f;
+}
+
+.marcas__patrocinadoras {
+  background-color: #f8f0ed;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.contenedor__patrocinadores {
+  color: #474747;
+  font-family: "perpetua";
+  padding-top: 2%;
 }
 /*# sourceMappingURL=main.css.map */
