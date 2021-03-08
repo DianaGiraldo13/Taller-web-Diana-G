@@ -224,26 +224,42 @@
 
 .contenedor__susc {
   background-color: #ead1bd;
-  min-height: 73vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  min-height: 100vh;
 }
 
 .contenedor__imagenescajitas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15%;
+  padding-left: 5%;
 }
 
 .imagenes__cajitas {
   background-color: #c79d7c;
-  width: 200px;
+  width: 190px;
   padding: 25px;
   margin-top: 5%;
   height: 150px;
   border-radius: 22px;
-  margin: 3%;
+  margin: 2%;
+}
+
+.contenedor__textossuscripciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5%;
+}
+
+.textos__suscripciones {
+  background-color: white;
+  width: 190px;
+  padding: 25px;
+  margin-top: 5%;
+  height: 300px;
+  border-radius: 22px;
+  margin: 2%;
+  font-family: "perpetua";
+  color: #474747;
 }
 /*# sourceMappingURL=main.css.map */
