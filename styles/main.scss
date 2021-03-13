@@ -155,8 +155,9 @@
     
 .contenedor__comentarios{
     background-color: rgb(248,240, 237);
-    min-height: 85vh;
+    min-height: 80vh;
     display: flex;
+    padding-left: 4%;
     
 }
 
@@ -164,11 +165,11 @@
     display: flex;
     background-color: rgb(199, 157, 124);
     width: 300px;
-    padding: 25px;
+    padding: 20px;
     margin-top: 5%;
     border-radius:20px;
     height: 70px;
-    margin-left: 16%;
+    margin-left: 15%;
 }
 
 .texto__reseñas{
@@ -182,14 +183,18 @@
 
 .contenedorimagenes__box{
     display: flex;
-    padding-top: 40%;
-    padding-right: 50%;
+    padding-top: 25%;
+    margin: 5%;
+    
+   
+   
+    
     
 }
 
 .contenedor__publicidad{
     background-color: rgb(234,209, 189);
-    min-height: 73vh;
+    min-height: 67vh;
     display: flex;
     text-align: center;
 }
@@ -197,7 +202,7 @@
 
 .contenedor__imagenpubl{
     padding-left: 3%;
-    padding-top: 4%;
+    padding-top: 2%;
 }
 
 .contenedor__textopubl{
@@ -226,7 +231,7 @@
 .contenedor__susc{
     background-color: rgb(234,209, 189);
     min-height: 100vh;
-    
+    margin-bottom: 0px;
     
 }
 
@@ -260,7 +265,6 @@
     background-color: rgb(255, 255, 255);
     width: 190px;
     padding: 25px;
-    margin-top: 5%;
     height: 300px;
     border-radius: 22px;
     margin: 2%;
@@ -270,5 +274,56 @@
 }
 
 
+.interaccion__cajitas{
+    background-color: rgb(248,240, 237);;
+    min-height: 67vh;
+    margin-top: 0px;
+}
+
+
+.contenedor__newsletter{
+    background-color: rgb(234,209, 189);
+    min-height: 20vh;
+    font-family: "perpetua";
+    color: #474747;
+    display: flex;
+
+ 
+}
+
+.texto__news{
+    padding: 3%;
+    display: flex;
+}
+
+
+.contenedor__input{
+    padding-top: 13%;
+    display: flex;
+    padding-left: 20%;
+
+  
+   
+}
+
+.boton__agregar{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #692626;
+    background-color: #ECCBA3;
+    margin-left: 10%;
+    font-family: "perpetua";
+    border-radius: 6px;
+    border-color: #ECCBA3 ;
+    
+    
+   
+}
+
+.boton__agregar:hover{
+    opacity: 0.6;
+    text-decoration: none;
+}
 
 
