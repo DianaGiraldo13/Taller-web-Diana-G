@@ -1,0 +1,33 @@
+.contenedor {
+    width: 100%;
+    background-color: rgb(248, 240, 237);
+  }
+  
+  .contenedor__header {
+    display: flex;
+    max-height: 12vh;
+    padding: 20px 20px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .topnav {
+    width: 60rem;
+    margin-left: 2%;
+  }
+  
+  .navitem {
+    margin-left: 5%;
+    text-decoration: none;
+    color: #3F3F3F;
+    font-family: "perpetua";
+  }
+  
+  .imagen__carro {
+    margin-left: 5%;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+

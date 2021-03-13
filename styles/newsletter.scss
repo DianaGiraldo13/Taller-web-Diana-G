@@ -1,0 +1,35 @@
+.contenedor__newsletter {
+    background-color: rgb(234, 209, 189);
+    min-height: 20vh;
+    font-family: "perpetua";
+    color: #474747;
+    display: flex;
+  }
+  
+  .texto__news {
+    padding: 3%;
+    display: flex;
+  }
+  
+  .contenedor__input {
+    padding-top: 13%;
+    display: flex;
+    padding-left: 20%;
+  }
+  
+  .boton__agregar {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #692626;
+    background-color: #ECCBA3;
+    margin-left: 10%;
+    font-family: "perpetua";
+    border-radius: 6px;
+    border-color: #ECCBA3;
+  
+    &:hover {
+      opacity: 0.6;
+      text-decoration: none;
+    }
+  }

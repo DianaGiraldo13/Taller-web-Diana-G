@@ -1,0 +1,56 @@
+.contenedor__banner {
+    background-color: rgb(255, 255, 255);
+    min-height: 60vh;
+    display: flex;
+    text-align: center;
+  }
+  
+  .imagen__banner {
+    padding: 25px;
+  }
+  
+  .contenedor__imagenes {
+    display: flex;
+  }
+  
+  .imagen__flecha {
+    padding-top: 40%;
+  }
+  
+  .contenedor__parrafo {
+    margin-top: 3%;
+  }
+  
+  .h1__titulo {
+    font-family: "perpetua";
+    padding-left: 100px;
+    color: #474747;
+  }
+  
+  .h2__parrafo {
+    font-family: "perpetua";
+    padding-top: 30px;
+    padding-left: 95px;
+    color: #474747;
+  }
+  
+  .boton__sub {
+    padding-top: 7%;
+  }
+  
+  .boton__suscribirme {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #692626;
+    background-color: #ECCBA3;
+    border-radius: 6px;
+    margin-left: 10%;
+    font-family: "perpetua";
+  
+    &:hover {
+      opacity: 0.6;
+      text-decoration: none;
+    }
+  }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAC;EAClB,gBAAgB,EAAE,OAAkB;EACpC,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,GAAG;CAChB",
+    "sources": [
+        "interaccionconelproducto.scss"
+    ],
+    "names": [],
+    "file": "interaccionconelproducto.css"
+}

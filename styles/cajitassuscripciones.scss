@@ -1,0 +1,36 @@
+.contenedor__susc {
+    background-color: rgb(234, 209, 189);
+    min-height: 100vh;
+    margin-bottom: 0px;
+  }
+  
+  .contenedor__imagenescajitas {
+    display: flex;
+    padding-left: 5%;
+  }
+  
+  .imagenes__cajitas {
+    background-color: rgb(199, 157, 124);
+    width: 190px;
+    padding: 25px;
+    margin-top: 5%;
+    height: 150px;
+    border-radius: 22px;
+    margin: 2%;
+  }
+  
+  .contenedor__textossuscripciones {
+    display: flex;
+    padding-left: 5%;
+  }
+  
+  .textos__suscripciones {
+    background-color: rgb(255, 255, 255);
+    width: 190px;
+    padding: 25px;
+    height: 300px;
+    border-radius: 22px;
+    margin: 2%;
+    font-family: "perpetua";
+    color: #474747;
+  }
