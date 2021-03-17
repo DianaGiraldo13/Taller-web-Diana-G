@@ -276,9 +276,9 @@
 
 .interaccion__cajitas{
     background-color: rgb(248,240, 237);;
-    min-height: 70vh;
+    min-height: 58vh;
     font-family: "perpetua";
-
+    
     
 }
 
@@ -287,11 +287,22 @@
     padding-top: 2%;
     text-align: center;
     
-
 }
 
-.color__cajitas{
+.imagenes__cajitanegra{
+    padding-left: 20%;
+    padding-top: 2%;
+}
+
+.contenedor__coloresycajas{
     display: flex;
+    padding-left: 18%;
+    padding-top: 2%;
+}
+
+.imagenes__circuloscolores{
+    padding-left: 5rem;
+    padding-top: 3%;
 }
 
 
