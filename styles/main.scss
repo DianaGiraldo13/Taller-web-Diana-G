@@ -14,6 +14,8 @@
     src: url("Roboto-Regular.ttf");
 }
 
+
+
 .contenedor{
     width: 100%;
     background-color: rgb(248, 240, 237);
@@ -52,12 +54,14 @@
     min-height: 60vh;
     display: flex;
     text-align: center;
+    
    
 }
 
 
 .imagen__banner{
     padding: 25px;
+
 }
 
 .contenedor__imagenes{
@@ -185,11 +189,7 @@
     display: flex;
     padding-top: 25%;
     margin: 5%;
-    
-   
-   
-    
-    
+
 }
 
 .contenedor__publicidad{
@@ -231,7 +231,7 @@
 .contenedor__susc{
     background-color: rgb(234,209, 189);
     min-height: 100vh;
-    margin-bottom: 0px;
+    
     
 }
 
@@ -276,9 +276,26 @@
 
 .interaccion__cajitas{
     background-color: rgb(248,240, 237);;
-    min-height: 67vh;
-    margin-top: 0px;
+    min-height: 70vh;
+    font-family: "perpetua";
+
+    
 }
+
+.contenedor__titulocajitasinter{
+    color: #474747;
+    padding-top: 2%;
+    text-align: center;
+    
+
+}
+
+.color__cajitas{
+    display: flex;
+}
+
+
+
 
 
 .contenedor__newsletter{
@@ -358,6 +375,7 @@
   
   .footer__basico li {
     padding:0 10px;
+    
   }
   
   .footer__basico ul a {
@@ -376,4 +394,12 @@
     display: flex;
     font-family: "perpetua"
     
+  }
+
+  body{
+      margin: 0;
+  }
+
+  html{
+    scroll-behavior: smooth;
   }

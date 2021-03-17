@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="./styles/main.css">
 
-
 </head>
 
 <body>
@@ -25,7 +24,7 @@
                 <a class="navitem" href="#cajita"><strong>CAJITA DEL MES</strong></a>
                 <a class="navitem" href="#productos"><strong>PRODUCTOS</strong></a>
                 <a class="navitem" href="#comofunciona"><strong>CÓMO FUNCIONA</strong></a>
-                <a class="navitem" href="#suscribete"><strong>SUSCRIBETE</strong></a>
+                <a class="navitem" href="#suscríbete"><strong>SUSCRÍBETE</strong></a>
 
                 <button class="imagen__carro">
                     <img src="shop.png" alt="" height="20" width="20">
@@ -42,17 +41,25 @@
 
     <div class="contenedor__banner">
 
+       
+
         <div class="contenedor__imagenes">
 
-            <a href="" class="imagen__flecha">
+            <a class="imagen__flecha" onclick="plusSlides(-1)">
                 <img src="Izquierda.png" alt="" height="40" width="40">
             </a>
 
+            <div class="slide__container">
+                <div class="image__slide">
+                    <img class="imagen__banner" src="imagenbanner.png" alt="" height="380" width="380">
+                </div>
+    
+                <div class="image__slide">
+                    <img class="imagen__banner" src="imagen2banner.png" alt="" height="380" width="380">
+                </div>
+            </div>
 
-            <img class="imagen__banner" src="imagenbanner.png" alt="" height="380" width="380">
-
-
-            <a href="" class="imagen__flecha">
+            <a class="imagen__flecha "  onclick="plusSlides(1)">
                 <img src="Derecha.png" alt="" height="40" width="40">
             </a>
 
@@ -63,13 +70,12 @@
 
         <div class="contenedor__parrafo">
             <h1 class="h1__titulo">Para resaltar tu belleza.. Suscríbete y toma <br> un respiro este mes. ¡No te
-                arrepentiras!</h1>
+                arrepentirás!</h1>
             <h2 class="h2__parrafo">Podrás adquirir cualquiera de estos productos <br> valorados por más a un precio
-                unico</h2>
+                único</h2>
 
             <div class="boton__sub">
-                <a class="boton__suscribirme" href="/suscribirse.html">Suscribirme</a>
-
+                <a class="boton__suscribirme" >Suscribirme</a>
             </div>
 
 
@@ -79,7 +85,7 @@
 
     <div class="contenedor__elegir">
 
-        <h1 class="h1__porque">¿Por que elegir Boxy Charm?</h1>
+        <h1 class="h1__porque">¿Por qué elegir Boxy Charm?</h1>
 
         <div class="contenedor__cuadros">
 
@@ -96,7 +102,7 @@
 
             <div class="item">
                 <img class="imagen__cuadro" src="Imagencuadro3.png" alt="" height="250" width="280">
-                <h3 class="texto__fotos">Envíos de calidad hacia tu <br>destino</h3>
+                <h3 class="texto__fotos">Envíos de calidad hacia tú <br>destino</h3>
             </div>
 
         </div>
@@ -133,7 +139,7 @@
             <img class="niña__2" src="niña2.png" alt="" height="80" width="80">
             <div>
                 <h2 class="texto__reseñas">Mariana García</h2>
-                <h3 class="texto__reseñas">Ame los productos, mi <br> envio llego super rápido. </h3>
+                <h3 class="texto__reseñas">Ame los productos, mi <br> envío llego super rápido. </h3>
 
                 <div class="contenedorimagenes__box">
                     <img class="imagenes__box" src="box2.png" alt="" height="240" width="260">
@@ -157,7 +163,7 @@
             <h2>
                 ELIGE TU REGALO GRATIS<br>
 
-                ¡Únase hoy para 5 artículos, su elección de un <br> regalo GRATIS ,
+                ¡Únase hoy para 5 artículos, su elección de un <br> regalo GRATIS,
 
                 más un crédito de $ 10 para <br> los complementos de marzo!
 
@@ -181,11 +187,11 @@
 
     </div>
 
-    <div class="contenedor__susc">
+    <div class="contenedor__susc" id="contenedor__susc">
 
        
 
-        <div class="contenedor__imagenescajitas">
+        <div class="contenedor__imagenescajitas" >
 
             <img class="imagenes__cajitas" src="cajita1.png" alt="" height="200" width="50">
 
@@ -252,9 +258,24 @@
 
 
     <div class="interaccion__cajitas">
-        <h2>
-            Aqui va la interaccion con el producto
-        </h2>
+
+        <h1 class="contenedor__titulocajitasinter">
+            Personaliza el color de tu cajita
+        </h1>
+
+        <div class="color__cajitas">
+
+            <img class="imagenes__cajitanegra" src="cajanegra.png" alt="" height="200" width="300">
+
+
+        </div>
+
+
+        
+
+
+
+
 
     </div>
 
@@ -302,7 +323,7 @@
                     <li class="list-inline-item"><a href="#">CAJITA DEL MES</a></li>
                     <li class="list-inline-item"><a href="#">PRODUCTOS</a></li>
                     <li class="list-inline-item"><a href="#">CÓMO FUNCIONA</a></li>
-                    <li class="list-inline-item"><a href="#">SUSCRIBETE</a></li>
+                    <li class="list-inline-item"><a href="#">SUSCRÍBETE</a></li>
                 </ul>
 
             </footer>
@@ -329,7 +350,7 @@
 
 
     </div>
-
+    <script src="script/script.js"></script>
 </body>
 
 </html>
