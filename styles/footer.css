@@ -1,8 +1,8 @@
 .contenedor__footer {
   background-color: #f8f0ed;
-  min-height: 30vh;
+  min-height: 20vh;
   padding-top: 5%;
-  padding-left: 5%;
+  padding-left: 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,6 +14,8 @@
   color: #4b4c4d;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  padding-left: 8%;
+  padding-top: 3%;
 }
 
 .footer__basico ul {
@@ -23,6 +25,12 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+.list-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__basico li {
@@ -40,8 +48,8 @@
 }
 
 .footer__iconos {
-  padding-top: 5%;
-  padding-left: 30%;
+  padding-top: 4%;
+  padding-left: 11%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
