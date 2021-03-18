@@ -273,24 +273,45 @@
   color: #474747;
   padding-top: 2%;
   text-align: center;
+  margin: 0;
 }
 
-.imagenes__cajitanegra {
-  padding-left: 20%;
+.imagenes__cajita {
+  padding-left: 8%;
   padding-top: 2%;
 }
 
 .contenedor__coloresycajas {
+  padding-left: 18%;
+  padding-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 18%;
-  padding-top: 2%;
 }
 
-.imagenes__circuloscolores {
-  padding-left: 5rem;
-  padding-top: 3%;
+.contenedor__circulos {
+  padding-left: 5%;
+  padding-top: 7%;
+}
+
+.imagen__circulonegro {
+  border: none;
+}
+
+.imagen__circuloamarillo {
+  border: none;
+}
+
+.imagen__circuloverde {
+  border: none;
+}
+
+.imagen__circulonaranja {
+  border: none;
+}
+
+.imagen__circuloazul {
+  border: none;
 }
 
 .contenedor__newsletter {
@@ -363,6 +384,12 @@
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+.list-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__basico li {
