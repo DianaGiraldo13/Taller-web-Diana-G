@@ -58,4 +58,13 @@
   opacity: 0.6;
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .contenedor__banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=banner.css.map */

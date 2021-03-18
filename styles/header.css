@@ -34,4 +34,10 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .topnav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=header.css.map */
