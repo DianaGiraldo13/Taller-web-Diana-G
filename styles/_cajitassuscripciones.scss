@@ -2,13 +2,19 @@
     background-color: rgb(234, 209, 189);
     min-height: 100vh;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
   }
   
   .contenedor__imagenescajitas {
     display: flex;
     padding-left: 5%;
   }
-  
+  .contenedorcajitas{
+    padding-top: 4%;
+    margin-right: 50px;
+  }
   .imagenes__cajitas {
     background-color: rgb(199, 157, 124);
     width: 190px;
@@ -33,4 +39,14 @@
     margin: 2%;
     font-family: "perpetua";
     color: #474747;
+  }
+
+  @media (max-width: 768px){
+    .contenedor__susc{
+
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    
   }
