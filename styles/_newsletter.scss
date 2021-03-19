@@ -14,7 +14,13 @@
 .contenedor__input {
   padding-top: 13%;
   display: flex;
-  padding-left: 20%;
+  padding-left: 15%;
+  .input{
+
+    margin:10px;
+    padding: 10px;
+
+  }
 }
 
 .boton__agregar {
@@ -27,9 +33,36 @@
   font-family: "perpetua";
   border-radius: 6px;
   border-color: #ECCBA3;
+  height: 50px;
 
   &:hover {
     opacity: 0.6;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 768px){
+
+  .contenedor__newsletter{
+
+    flex-direction: column;
+  }
+  .contenedor__input{
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    flex-direction: column;
+    
+    .input{
+
+      width: 80%;
+      margin:1%;
+     
+    }
+    .boton__agregar{
+      margin: 0px;
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
   }
 }

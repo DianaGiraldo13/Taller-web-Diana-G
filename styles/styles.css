@@ -284,7 +284,6 @@
 
 .contenedorcajitas {
   padding-top: 4%;
-  margin-right: 50px;
 }
 
 .imagenes__cajitas {
@@ -448,6 +447,33 @@
   font-family: "perpetua";
 }
 
+@media (max-width: 768px) {
+  .contenedor__footer {
+    padding: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px;
+  }
+  .contenedor__footer .footer__basico {
+    padding: 0px;
+  }
+  .contenedor__footer .footer__basico footer ul {
+    display: block;
+  }
+  .contenedor__footer .footer__basico footer .footer__iconos {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0px;
+    padding-top: 5px;
+  }
+}
+
 .marcas__patrocinadoras {
   background-color: #f8f0ed;
   text-align: center;
@@ -486,7 +512,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 20%;
+  padding-left: 15%;
+}
+
+.contenedor__input .input {
+  margin: 10px;
+  padding: 10px;
 }
 
 .boton__agregar {
@@ -499,11 +530,43 @@
   font-family: "perpetua";
   border-radius: 6px;
   border-color: #ECCBA3;
+  height: 50px;
 }
 
 .boton__agregar:hover {
   opacity: 0.6;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contenedor__newsletter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor__input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor__input .input {
+    width: 80%;
+    margin: 1%;
+  }
+  .contenedor__input .boton__agregar {
+    margin: 0px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
 }
 
 .contenedor__publicidad {

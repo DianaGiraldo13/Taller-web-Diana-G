@@ -50,3 +50,30 @@
   display: flex;
   font-family: "perpetua";
 }
+
+@media (max-width: 768px){
+
+  .contenedor__footer{
+
+    padding: 0%;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    .footer__basico{
+      padding: 0px;
+      footer{
+        ul{
+          display: block;
+        }
+        .footer__iconos{
+
+        justify-content: space-between;
+        padding: 0px;
+        padding-top: 5px;
+        }
+
+      }
+    }
+    
+  }
+}
