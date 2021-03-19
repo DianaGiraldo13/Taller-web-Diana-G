@@ -1,7 +1,9 @@
 .interaccion__cajitas {
   background-color: rgb(248, 240, 237);
-  min-height: 58vh;
   font-family: "perpetua";
+  width: 100%;
+
+  
 }
 
 .contenedor__titulocajitasinter {
@@ -20,6 +22,7 @@
   padding-left: 18%;
   padding-top: 2%;
   display: flex;
+  padding-bottom: 5%;
 }
 
 .contenedor__circulos {
@@ -29,4 +32,30 @@
 
 .imagen__circulonegro, .imagen__circuloamarillo, .imagen__circuloverde, .imagen__circulonaranja, .imagen__circuloazul {
   border: none;
+}
+
+@media (max-width: 768px){
+
+.contenedor__coloresycajas{
+  flex-direction: column;
+  padding: 0px;
+ 
+  align-items: center;
+  
+  img{
+
+
+    padding: 0px;
+  
+  }
+  .contenedor__circulos{
+
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
 }

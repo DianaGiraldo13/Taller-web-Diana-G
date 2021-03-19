@@ -48,7 +48,6 @@ imagen__circulonegro.addEventListener('click',clickNegro);
 
 function clickNegro (){
     imagenes__cajita[0].setAttribute('src','./../cajanegra.png')
-
 }
 
 //otra caja
@@ -59,7 +58,6 @@ imagen__circuloverde.addEventListener('click',clickVerde);
 
 function clickVerde (){
     imagenes__cajita[0].setAttribute('src','./../cajaverde.png')
-
 }
 
 //otra caja
