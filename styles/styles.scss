@@ -2,12 +2,25 @@
 @import "banner";
 @import "caracteristicasprincipales";
 @import "comentarios";
+@import "publicidadpropia";
+@import "marcaspatrocinadoras";
 @import "cajitassuscripciones";
 @import "interaccionconelproducto";
-@import "footer";
-@import "marcaspatrocinadoras";
 @import "newsletter";
-@import "publicidadpropia";
+@import "footer";
+
+@media (max-width: 768px){
+
+  h1{
+
+    font-size: 25px;
+  }
+  h2{
+
+   font-size:  18px;
+  }
+
+}
 body{
     margin: 0;
 }

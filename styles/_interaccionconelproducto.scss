@@ -11,6 +11,7 @@
   padding-top: 2%;
   text-align: center;
   margin: 0;
+  
 }
 
 .imagenes__cajita {
@@ -35,27 +36,39 @@
 }
 
 @media (max-width: 768px){
+  .interaccion__cajitas{
+    .contenedor__titulocajitasinter{
+    
 
-.contenedor__coloresycajas{
-  flex-direction: column;
-  padding: 0px;
- 
-  align-items: center;
+      font-size: 21px;
+      margin-bottom: 10px;
   
-  img{
+    }
 
-
+  }
+  .contenedor__coloresycajas{
+    flex-direction: column;
     padding: 0px;
+   
+    align-items: center;
+    
+    img{
   
+  
+      padding: 0px;
+    
+    }
+    .contenedor__circulos{
+  
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
   }
-  .contenedor__circulos{
+  
+  
 
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
 }
 
-}

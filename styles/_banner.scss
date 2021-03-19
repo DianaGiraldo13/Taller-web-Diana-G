@@ -67,6 +67,11 @@
   
   .contenedor__banner{
 
+    .imagen__flecha{
+
+      padding: 0px;
+      align-self: center;
+    }
     flex-direction: column;
     .contenedor__imagenes{
       justify-content: center;
