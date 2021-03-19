@@ -373,13 +373,21 @@
   display: -ms-flexbox;
   display: flex;
   padding-left: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor__textossuscripciones .boton__suscribirme {
+  margin-left: 30px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .textos__suscripciones {
   background-color: white;
   width: 190px;
   padding: 25px;
-  height: 300px;
   border-radius: 22px;
   margin: 2%;
   font-family: "perpetua";
@@ -402,6 +410,18 @@
   background-color: #f8f0ed;
   font-family: "perpetua";
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.interaccion__cajitas .boton__suscribirme {
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .contenedor__titulocajitasinter {
@@ -559,12 +579,10 @@
 }
 
 .footer__basico {
-  padding: 40px 0;
   color: #4b4c4d;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   padding-left: 8%;
-  padding-top: 3%;
 }
 
 .footer__basico ul {
@@ -596,13 +614,27 @@
   opacity: 1;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__iconos {
-  padding-top: 4%;
-  padding-left: 11%;
+  padding-top: 2%;
+  margin-right: auto;
+  margin-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "perpetua";
+}
+
+.footer__iconos img {
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -620,10 +652,17 @@
   .contenedor__footer .footer__basico {
     padding: 0px;
   }
+  .contenedor__footer .footer__basico footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .contenedor__footer .footer__basico footer ul {
     display: block;
   }
   .contenedor__footer .footer__basico footer .footer__iconos {
+    margin: 0px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

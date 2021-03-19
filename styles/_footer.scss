@@ -8,11 +8,11 @@
 }
 
 .footer__basico {
-  padding: 40px 0;
+  
   color: #4b4c4d;
   text-decoration-line: underline;
   padding-left: 8%;
-  padding-top: 3%;
+  
 
   ul {
     padding: 0;
@@ -43,12 +43,22 @@
     }
   }
 }
+footer{
+
+  display: flex;
+  align-items: center;
+}
 
 .footer__iconos {
-  padding-top: 4%;
-  padding-left: 11%;
+  padding-top: 2%;
+  margin-right:auto;
+  margin-left: 30px;
   display: flex;
   font-family: "perpetua";
+  img{
+
+    margin: 10px;
+  }
 }
 
 @media (max-width: 768px){
@@ -62,11 +72,12 @@
     .footer__basico{
       padding: 0px;
       footer{
+        flex-direction: column;
         ul{
           display: block;
         }
         .footer__iconos{
-
+          margin: 0px;
         justify-content: space-between;
         padding: 0px;
         padding-top: 5px;
