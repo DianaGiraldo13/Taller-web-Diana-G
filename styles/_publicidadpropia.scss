@@ -8,6 +8,12 @@
   .contenedor__imagenpubl {
     padding-left: 3%;
     padding-top: 2%;
+    width:590px;
+  
+    img{
+
+      width: 100%;
+    }
   }
   
   .contenedor__textopubl {
@@ -16,3 +22,26 @@
     font-family: "perpetua";
     color: rgb(63, 63, 63);
   }
+
+  @media (max-width: 768px){
+
+    .contenedor__publicidad{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contenedor__imagenpubl{
+
+        width:250px;
+        
+        br{
+
+          display: none;
+        }
+
+      }
+    }
+
+  }
+
+  

@@ -5,8 +5,10 @@
     padding-left: 4%;
   }
   
+  
   .contenedor__reseñas {
     display: flex;
+    flex-direction: row;
     background-color: rgb(199, 157, 124);
     width: 300px;
     padding: 20px;
@@ -14,8 +16,15 @@
     border-radius: 20px;
     height: 70px;
     margin-left: 15%;
+    
+
+    
   }
-  
+  .divTextoReseñas{
+
+    width: 100%;
+    
+  }
   .texto__reseñas {
     font-family: "perpetua";
     margin-left: 10%;
@@ -30,3 +39,12 @@
     margin: 5%;
   }
   
+  
+  @media (max-width: 768px) {
+
+    .contenedor__comentarios{
+
+      flex-direction: column;
+    }
+    
+  }

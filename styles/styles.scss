@@ -1,14 +1,19 @@
 @import "header";
 @import "banner";
 @import "caracteristicasprincipales";
-@import "cajitassuscripciones";
 @import "comentarios";
+@import "cajitassuscripciones";
 @import "interaccionconelproducto";
 @import "footer";
 @import "marcaspatrocinadoras";
 @import "newsletter";
-@import "publicidadpropia"
-
+@import "publicidadpropia";
+body{
+    margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
 
 
 
