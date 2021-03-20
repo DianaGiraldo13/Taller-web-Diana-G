@@ -1,6 +1,6 @@
 .contenedor__elegir {
   background-color: rgb(234, 209, 189);
-  min-height: 70vh;
+ // min-height: 70vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 
 .contenedor__cuadros {
   display: flex;
-  padding-left: 13%;
+  justify-content: center;
 }
 
 .imagen__cuadro {

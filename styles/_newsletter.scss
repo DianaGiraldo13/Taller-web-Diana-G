@@ -4,6 +4,8 @@
   font-family: "perpetua";
   color: #474747;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .texto__news {
@@ -12,9 +14,9 @@
 }
 
 .contenedor__input {
-  padding-top: 13%;
+ 
   display: flex;
-  padding-left: 15%;
+  
   .input{
 
     margin:10px;

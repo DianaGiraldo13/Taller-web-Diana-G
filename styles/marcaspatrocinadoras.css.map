@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,gBAAgB,EAAE,OAAkB;EACpC,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,2BAA2B,CAAC;EAC1B,KAAK,EAAE,OAAO;EACd,WAAW,EAAE,UAAU;EACvB,WAAW,EAAE,EAAE;CAChB",
-    "sources": [
-        "marcaspatrocinadoras.scss"
-    ],
-    "names": [],
-    "file": "marcaspatrocinadoras.css"
-}

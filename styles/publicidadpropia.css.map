@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,gBAAgB,EAAE,OAAkB;EACpC,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,uBAAuB,CAAC;EACtB,YAAY,EAAE,EAAE;EAChB,WAAW,EAAE,EAAE;CAChB;;AAED,AAAA,sBAAsB,CAAC;EACrB,WAAW,EAAE,GAAG;EAChB,YAAY,EAAE,EAAE;EAChB,WAAW,EAAE,UAAU;EACvB,KAAK,EAAE,OAAe;CACvB",
-    "sources": [
-        "publicidadpropia.scss"
-    ],
-    "names": [],
-    "file": "publicidadpropia.css"
-}

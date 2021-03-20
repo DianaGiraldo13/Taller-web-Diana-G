@@ -3,9 +3,10 @@
   min-height: 60vh;
   display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .image__slide{
-
   width: 380px;
   height: 380px;
   .imagen__banner{
@@ -82,7 +83,6 @@
       width: 200px;
       height: 200px;
     }
-
     .h1__titulo {
       padding: 0px;
     }
