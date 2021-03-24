@@ -50,7 +50,7 @@ imagen__circuloamarillo.addEventListener('click',clickAmarillo);
 
 
 function clickAmarillo (){
-    imagenes__cajita[0].setAttribute('src','./../cajaamarilla.png')
+    imagenes__cajita[0].setAttribute('src','./cajaamarilla.png')
 }
 
 //otracaja
@@ -60,7 +60,7 @@ imagen__circulonegro.addEventListener('click',clickNegro);
 
 
 function clickNegro (){
-    imagenes__cajita[0].setAttribute('src','./../cajanegra.png')
+    imagenes__cajita[0].setAttribute('src','./cajanegra.png')
 }
 
 //otra caja
@@ -70,7 +70,7 @@ imagen__circuloverde.addEventListener('click',clickVerde);
 
 
 function clickVerde (){
-    imagenes__cajita[0].setAttribute('src','./../cajaverde.png')
+    imagenes__cajita[0].setAttribute('src','./cajaverde.png')
 }
 
 //otra caja
@@ -80,7 +80,7 @@ imagen__circulonaranja.addEventListener('click',clickNaranja);
 
 
 function clickNaranja (){
-    imagenes__cajita[0].setAttribute('src','./../cajanaranja.png')
+    imagenes__cajita[0].setAttribute('src','./cajanaranja.png')
 
 }
 
@@ -91,7 +91,7 @@ imagen__circuloazul.addEventListener('click',clickAzul);
 
 
 function clickAzul (){
-    imagenes__cajita[0].setAttribute('src','./../cajaazul.png')
+    imagenes__cajita[0].setAttribute('src','./cajaazul.png')
 
 }
 
