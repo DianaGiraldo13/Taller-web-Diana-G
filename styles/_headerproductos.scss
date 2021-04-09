@@ -1,0 +1,105 @@
+.contenedor {
+    width: 100%;
+    background-color: rgb(248, 240, 237);
+  }
+  
+  .contenedor__header {
+    display: flex;
+    max-height: 12vh;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .topnav {
+    width: 60rem;
+    margin-left: 2%;
+  }
+  .contenedor__menu_mobile{
+    width: 30px;
+  
+    img{
+      width: 100%;
+    }
+  }
+  .contenedor__menu_mobile{
+  
+    display: none;
+  }
+  .menumobile{
+  
+    display: none;
+  }
+  .imagen__carromobile{
+    display: none;
+  }
+  .navitem {
+    margin-left: 5%;
+    text-decoration: none;
+    color: #3F3F3F;
+    font-family: "perpetua";
+  }
+  
+  .imagen__carro {
+    margin-left: 5%;
+    border: none;
+    cursor: pointer;
+    background-color:transparent;
+  }
+  
+  
+  @media (max-width: 768px) {
+    
+    .contenedor__header{
+  
+      justify-content: flex-start;
+      align-items: center;
+      .imagen__carromobile{
+  
+        display: block;
+        background-color:transparent;
+        border: none;
+      }
+      .logo{
+  
+        margin:auto;
+      }
+    }
+    .contenedor__menu_mobile{
+  
+      display: block;
+    }
+    .topnav {
+      display: none;
+    }
+    .menumobileopciones{
+  
+      li{
+  
+        list-style: none;
+        
+        
+        a{
+          text-decoration:none;
+          color: white;
+          
+        }
+      }
+    }
+    
+    .menumobile{
+  
+      position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:20px;
+        top: 0px;
+        left: 0px;
+        width: 40%;
+        height:100vh;
+        background-color: #EAD1BD;
+    }
+  
+  }
+  
