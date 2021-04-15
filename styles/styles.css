@@ -219,6 +219,50 @@
   }
 }
 
+.contenedorLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(234, 209, 189, 0.47);
+  width: 60%;
+  padding: 1em;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contenedorLogin input {
+  margin-bottom: 22px;
+  height: 30px;
+}
+
+.contenedorLogin label {
+  margin-bottom: 8px;
+}
+
+.contenedorLogin .btnIniciar {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 38px;
+  width: 159px;
+  left: 682px;
+  top: 629px;
+  border-radius: 4px;
+  background-color: #eccba3;
+  border: none;
+  outline: none;
+}
+
+.contenedorLogin h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #3f3f3f;
+}
+
 .contenedor__elegir {
   background-color: #ead1bd;
   text-align: center;
@@ -797,18 +841,17 @@ footer {
   text-align: center;
   text-decoration: none;
   font-family: "perpetua";
+  padding-top: 5%;
 }
 
 .producto {
   border: 1px;
-  width: 300px;
+  width: 280px;
   display: block;
-  padding-left: 20%;
-  padding-top: 5%;
 }
 
 .producto__imagen {
-  width: 50%;
+  width: 48%;
 }
 
 .producto__info {
@@ -825,6 +868,74 @@ footer {
   padding-top: 3%;
 }
 
+body {
+  background-color: #f8f0ed;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  background-color: rgba(234, 209, 189, 0.47);
+}
+
+.inputContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+}
+
+.inputContenedor input {
+  margin-bottom: 10px;
+  height: 25px;
+  width: 418px;
+}
+
+.inputContenedor label {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .inputContenedor {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 0px;
+  }
+  .inputContenedor input {
+    width: 100%;
+  }
+  .inputContenedor label {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 25px;
@@ -835,6 +946,7 @@ footer {
 }
 
 body {
+  background-color: white;
   margin: 0;
 }
 

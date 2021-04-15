@@ -1,28 +1,23 @@
-
 .list{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     text-decoration: none;
     font-family: "perpetua";
+    padding-top: 5%;
     
+   
 
 }
 
 
 .producto{
     border: 1px;
-    width: 300px;
+    width: 280px;
     display: block;
-    padding-left: 20%;
-    padding-top: 5%;
    
-    
-    
-    
-
     &__imagen{
-        width: 50%;
+        width: 48%;
     }
 
     &__info{

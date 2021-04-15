@@ -1,14 +1,14 @@
 const productos = [
     {
         img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremd',
+        titulo: ' Mate Peach Kiss Lipstick',
         precio: 44000,
     },
 
     {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremeeeee',
-        precio: 49000,
+        img: '651986701308_1-removebg-preview.png',
+        titulo: ' Born This Way Foundation',
+        precio: 168000,
     },
 
     {

@@ -1,5 +1,6 @@
 @import "header";
 @import "banner";
+@import "inicioSesion";
 @import "caracteristicasprincipales";
 @import "comentarios";
 @import "publicidadpropia";
@@ -9,6 +10,7 @@
 @import "newsletter";
 @import "footer";
 @import "productos";
+@import "formulario";
 
 @media (max-width: 768px){
 
@@ -23,6 +25,7 @@
 
 }
 body{
+  background-color: white;
     margin: 0;
 }
 html{
