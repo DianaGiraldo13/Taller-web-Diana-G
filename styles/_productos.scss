@@ -1,0 +1,48 @@
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    font-family: "perpetua";
+    
+
+}
+
+
+.producto{
+    border: 1px;
+    width: 300px;
+    display: block;
+    padding-left: 20%;
+    padding-top: 5%;
+   
+    
+    
+    
+
+    &__imagen{
+        width: 50%;
+    }
+
+    &__info{
+        padding: 10px;
+    }
+
+    &__titulo{
+        margin-top: 5px;
+        margin-bottom: 5px;
+  
+    }
+
+    &__precio{
+        margin: 0;
+        padding-top: 3%;
+        
+    }
+
+   
+
+}
+
+

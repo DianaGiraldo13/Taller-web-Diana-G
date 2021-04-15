@@ -788,6 +788,43 @@ footer {
   }
 }
 
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  text-decoration: none;
+  font-family: "perpetua";
+}
+
+.producto {
+  border: 1px;
+  width: 300px;
+  display: block;
+  padding-left: 20%;
+  padding-top: 5%;
+}
+
+.producto__imagen {
+  width: 50%;
+}
+
+.producto__info {
+  padding: 10px;
+}
+
+.producto__titulo {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.producto__precio {
+  margin: 0;
+  padding-top: 3%;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 25px;
