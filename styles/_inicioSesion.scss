@@ -5,7 +5,8 @@
     width: 60%;
     padding: 1em;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
     input {
         margin-bottom: 22px;
@@ -35,4 +36,22 @@
         font-size: 25px;
         color: rgba(63, 63, 63, 1);
     }
+
+    .registroText{
+
+    text-align:center;
+
+    a{
+
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    a:visited{
+        text-decoration: none; 
+    }
+    }
 }
+
+

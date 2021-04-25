@@ -231,7 +231,8 @@
   width: 60%;
   padding: 1em;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .contenedorLogin input {
@@ -261,6 +262,19 @@
   text-align: center;
   font-size: 25px;
   color: #3f3f3f;
+}
+
+.contenedorLogin .registroText {
+  text-align: center;
+}
+
+.contenedorLogin .registroText a {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedorLogin .registroText a:visited {
+  text-decoration: none;
 }
 
 .contenedor__elegir {
@@ -870,6 +884,7 @@ footer {
 
 body {
   background-color: #f8f0ed;
+  font-family: "perpetua";
 }
 
 .formulario {
@@ -886,6 +901,8 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
   background-color: rgba(234, 209, 189, 0.47);
 }
 
@@ -934,6 +951,50 @@ body {
   .inputContenedor label {
     margin-bottom: 10px;
   }
+}
+
+.contenedorRegistrarse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(234, 209, 189, 0.47);
+  width: 60%;
+  padding: 1em;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contenedorRegistrarse input {
+  margin-bottom: 22px;
+  height: 30px;
+}
+
+.contenedorRegistrarse label {
+  margin-bottom: 8px;
+}
+
+.contenedorRegistrarse .btnRegistrarse {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 38px;
+  width: 159px;
+  left: 682px;
+  top: 629px;
+  border-radius: 4px;
+  background-color: #eccba3;
+  border: none;
+  outline: none;
+}
+
+.contenedorRegistrarse h1 {
+  text-align: center;
+  font-size: 25px;
+  color: #3f3f3f;
 }
 
 @media (max-width: 768px) {

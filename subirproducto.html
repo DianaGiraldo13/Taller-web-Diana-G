@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -25,7 +24,7 @@
                 <img class="cerrar" src="Cerrar.png" height="20" width="20">
 
                 <ul class="menumobileopciones">
-                    <li><a href="#">Ingresar</a></li>
+                    <li><a href="./inicioSesion.html">Ingresar</a></li>
                     <li><a href="#">Cajita del mes</a></li>
                     <li><a href="./productos.html">Productos</a></li>
                     <li><a href="#">Cómo funciona</a></li>
@@ -39,7 +38,7 @@
 
             </button>
             <div class="topnav">
-                <a class="navitem" href="#ingresar"><strong>INGRESAR</strong></a>
+                <a class="navitem" href="./inicioSesion.html"><strong>INGRESAR</strong></a>
                 <a class="navitem" href="#cajita"><strong>CAJITA DEL MES</strong></a>
                 <a class="navitem" href="./productos.html"><strong>PRODUCTOS</strong></a>
                 <a class="navitem" href="#comofunciona"><strong>CÓMO FUNCIONA</strong></a>
@@ -92,6 +91,68 @@
 
     </form>
 
+
+    <div class="contenedor__footer">
+
+        <img class="imagen__logo" src="Logoestees.png" alt="" height="80" width="170">
+
+        <div class="footer__basico">
+
+            <footer>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">INGRESA</a></li>
+                    <li class="list-inline-item"><a href="#">CAJITA DEL MES</a></li>
+                    <li class="list-inline-item"><a href="#">PRODUCTOS</a></li>
+                    <li class="list-inline-item"><a href="#">CÓMO FUNCIONA</a></li>
+                    <li class="list-inline-item"><a href="#">SUSCRÍBETE</a></li>
+                </ul>
+
+
+                <div class="footer__iconos">
+
+                    <a href="" class="imagen__face">
+                        <img src="facebook.png" alt="" height="30" width="30">
+                    </a>
+
+                    <a href="" class="imagen__insta">
+                        <img src="instagram.png" alt="" height="30" width="30">
+                    </a>
+
+                    <a href="" class="imagen__chat">
+                        <img src="messenger.png" alt="" height="30" width="30">
+                    </a>
+
+
+
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
 </body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7_Qlo7bi2qQXlfccUfu4ZES9EU24BqQw",
+    authDomain: "boxycharm-a54e1.firebaseapp.com",
+    projectId: "boxycharm-a54e1",
+    storageBucket: "boxycharm-a54e1.appspot.com",
+    messagingSenderId: "929716530628",
+    appId: "1:929716530628:web:7f809ca121d2a41b1dc891"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 </html>
