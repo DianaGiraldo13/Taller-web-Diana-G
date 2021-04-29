@@ -1,58 +1,85 @@
 const db = firebase.firestore();
 const storage = firebase.storage();
 const formulario = document.querySelector(".formulario");
-const db = firebase.firestore();
-const storage = firebase.storage();
-const productImg = document.querySelector(".productFormImg");
+const productImg = document.querySelector(".formularioImg");
 const imageFiles=[];
 
+console.log(formulario)
 //actualiza la vista previa de la imagen
-productForm.image.addEventListener("change", () => {
+formulario.imagen.addEventListener("change", () => {
 
     var reader = new FileReader();
-
-    reader.onload = function (e) {
-
-        productImg.setAttribute("src", e.target.result);
-    }
-
-    reader.readAsDataURL(productForm.image.files[0]);
+    const file = formulario.imagen.files[0]
+    reader.readAsDataURL(formulario.imagen.files[0]);
+    imageFiles.push(file);
 
 });
 
 
-//evento de subir el producto
-productForm.addEventListener("submit", (event) => {
+formulario.addEventListener("submit", (event) => {
 
     event.preventDefault();
 
     const product = {
-    name: productForm.name.value,
-    price: parseFloat(productForm.price.value),
-    genre: productForm.genre.value,
-    description: productForm.description.value,
-    metacritic: productForm.metacritic.value
+    nombre: formulario.nombre.value,
+    precio: parseFloat(formulario.precio.value),
+    categoria: formulario.categoria.value,
+    marca: formulario.marca.value,
+    descripcion: formulario.descripcion.value
+
     }
 
     
+    db.collection("products").add(product).then(function (docref) {
 
-    let storageRef = firebase.storage().ref();
-    const file =productForm.image.files[0];
+        const uploadPromises = [];
+        const downloadURLPromises = [];
 
-    let fileRef = storageRef.child(`images/${product.name}/${file.name}`);
-    console.log(productForm.image.files);
+        imageFiles.forEach(function (file) {
 
-    fileRef.put(file).then((snapshot)=>{
+            let storageRef = firebase.storage().ref();
+            let fileRef = storageRef.child(`products/${docref.id}/${file.name}`);
 
-        snapshot.ref.getDownloadURL().then((downloadURL)=>{
-        
-        product.imageURL=downloadURL;
-        product.imageRef=snapshot.ref.fullPath;
-
-        db.collection("products").add(product);
+            uploadPromises.push(fileRef.put(file))
 
         })
 
+        Promise.all(uploadPromises).then(function (snapshots) {
+
+            snapshots.forEach(function (snapshot) {
+
+                downloadURLPromises.push(snapshot.ref.getDownloadURL())
+
+            });
+
+            Promise.all(downloadURLPromises).then(function (dowloadURL) {
+                const imagenes= []
+
+                dowloadURL.forEach(function (url,index){
+
+                    imagenes.push({
+
+                        url:url,
+                        ref:snapshots[index].ref.fullPath
+                    });
+
+                })
+
+                db.collection("products").doc(docref.id).update({
+
+                    imagenes:imagenes
+                }).then(function (){
+
+                    console.log("producto agregado")
+                })
+
+                
+            })
+
+        })
+    }).catch(function (error){
+
+        console.log(error)
     })
     
 

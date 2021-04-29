@@ -59,36 +59,40 @@
 
     <form class="formulario" action="submit">
 
+        <div class="formularioContenedor">
 
-        <div class="inputContenedor">
+            <div class="inputContenedor">
 
+                <label for="formulario__nombre" class="formulario__label">Nombre</label>
+                <input id="formulario_nombre" class="formulario_input" name="nombre" type="text">
+    
+                <label for="formulario__descripcion" class="formulario__label">Descripción</label>
+                <input id="formulario_descripcion" class="formulario_input" name="descripcion" type="text">
+    
+                <label for="formularioImagen">Imagen</label>
+                <input class="formularioImagen" name="imagen" type="file">
+    
+            </div>
+    
+    
+    
+            <div class="inputContenedor">
+    
+                <label for="formulario_precio" class="formulario__label">Precio</label>
+                <input id="productForm_price" class="productForm_input" name="precio" type="number">
+    
+                <label for="formulario__categoria" class="formulario__label">Categoria</label>
+                <input id="productForm_categoria" class="productForm_input" name="categoria" type="text">
+                
+                <label for="formulario__marca" class="formulario__label">Marca</label>
+                <input id="productForm_marca" class="productForm_input" name="marca" type="text">
+    
+            </div>
 
-            <label for="formulario__nombre" class="formulario__label">Nombre</label>
-            <input id="formulario_nombre" class="formulario_input" name="nombre" type="text">
-
-            <label for="formulario__descripcion" class="formulario__label">Descripción</label>
-            <input id="formulario_descripcion" class="formulario_input" name="descripcion" type="text">
-
-            <label for="formularioImagen">Imagen</label>
-            <input class="formularioImagen" name="imagen" type="file">
 
         </div>
-
-
-
-        <div class="inputContenedor">
-
-            <label for="formulario_precio" class="formulario__label">Precio</label>
-            <input id="productForm_price" class="productForm_input" name="price" type="number">
-
-            <label for="formulario__categoria" class="formulario__label">Categoria</label>
-            <input id="productForm_categoria" class="productForm_input" name="categoria" type="text">
-            
-            <label for="formulario__marca" class="formulario__label">Marca</label>
-            <input id="productForm_marca" class="productForm_input" name="marca" type="text">
-
-        </div>
-
+        
+        <button type="submit">ENVIAR</button>
     </form>
 
 
@@ -140,6 +144,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
      <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
 
 <script>
   // Your web app's Firebase configuration
@@ -154,5 +159,5 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
-
+<script src="./script/subirProducto.js"></script>
 </html>

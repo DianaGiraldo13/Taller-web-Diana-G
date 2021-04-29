@@ -893,10 +893,14 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
+  padding: 2em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -904,6 +908,23 @@ body {
   margin-top: 50px;
   margin-bottom: 100px;
   background-color: rgba(234, 209, 189, 0.47);
+}
+
+.formulario .formularioContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formulario button {
+  background-color: #eccba3;
+  border: none;
+  font-family: "perpetua";
+  font-weight: bold;
+  width: 159px;
+  height: 38px;
+  font-size: 14;
+  margin: auto;
 }
 
 .inputContenedor {

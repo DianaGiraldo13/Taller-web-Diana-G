@@ -8,13 +8,31 @@ body{
 
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    padding:1em;
+    padding:2em;
     width: fit-content;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 100px;
     background-color: rgba(234, 209, 189, 0.47);
+
+    .formularioContenedor{
+
+        display: flex;
+        
+    }
+    button{
+
+        background-color: rgba(236, 203, 163, 1);
+        border: none;
+        font-family: "perpetua";
+        font-weight: bold;
+        width: 159px;
+        height: 38px;
+        font-size: 14;
+        margin: auto;
+    }
 }
 
 .inputContenedor{
