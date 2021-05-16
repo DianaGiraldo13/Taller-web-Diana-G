@@ -855,12 +855,29 @@ footer {
   text-align: center;
   text-decoration: none;
   font-family: "perpetua";
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 5%;
+  background-color: #f8f0ed;
+}
+
+.productoMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productoAside {
+  width: 50%;
+  background-color: #f8f0ed;
+  border-width: 1px;
+  border-right-style: solid;
+  border-color: orangered;
 }
 
 .producto {
   border: 1px;
-  width: 280px;
+  width: 30%;
   display: block;
 }
 
@@ -870,16 +887,43 @@ footer {
 
 .producto__info {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .producto__titulo {
+  margin: 0;
   margin-top: 5px;
+  height: 60px;
+  word-wrap: break-word;
+  width: 150px;
   margin-bottom: 5px;
+  color: #3f3f3f;
+  text-decoration: none;
+  text-align: center;
 }
 
 .producto__precio {
   margin: 0;
   padding-top: 3%;
+  color: #3f3f3f;
+}
+
+.producto a {
+  text-decoration: none;
+}
+
+.producto .btnCarrito {
+  width: 25px;
+  height: 25px;
 }
 
 body {

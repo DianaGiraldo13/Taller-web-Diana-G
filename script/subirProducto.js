@@ -9,7 +9,7 @@ console.log(formulario)
 formulario.imagen.addEventListener("change", () => {
 
     var reader = new FileReader();
-    const file = formulario.imagen.files[0]
+    const file = formulario.imagen.files[0];
     reader.readAsDataURL(formulario.imagen.files[0]);
     imageFiles.push(file);
 

@@ -37,22 +37,23 @@ const productos = [
 
     {
         img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremmmmmm',
+        titulo: 'loremmmmmm <br> hhdoidnahifkl',
         precio: 40000,
     },
 
 
 ]
+//<a href ="./product.html?id=${doc.id}&=${data.name}">
 
 const list = document.querySelector('.list');
 
 function handleProductoitem(item){
     
-        const productos = document.createElement('a');
+        const productos = document.createElement('div');
         productos.innerHTML = `
-        
+        <a href ="#">
         <img class="producto__imagen" src="${item.img}" alt="">
-
+        
         <div class="producto__info">
 
             <h1 class="producto__titulo">
@@ -69,11 +70,12 @@ function handleProductoitem(item){
 
 
         </div>
-
+        </a>
+        <img class="btnCarrito" src="./shop.png">
         `;
 
-        productos.classList.add('productos');
-        productos.setAttribute('href', '#');
+        productos.classList.add('producto');
+       
         
         list.appendChild(productos);
 
