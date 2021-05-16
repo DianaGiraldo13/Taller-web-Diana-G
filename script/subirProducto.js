@@ -1,5 +1,3 @@
-const db = firebase.firestore();
-const storage = firebase.storage();
 const formulario = document.querySelector(".formulario");
 const productImg = document.querySelector(".formularioImg");
 const imageFiles=[];
@@ -34,7 +32,6 @@ formulario.addEventListener("submit", (event) => {
 
         const uploadPromises = [];
         const downloadURLPromises = [];
-
         imageFiles.forEach(function (file) {
 
             let storageRef = firebase.storage().ref();
