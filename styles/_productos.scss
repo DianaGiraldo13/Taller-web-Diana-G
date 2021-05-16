@@ -19,8 +19,20 @@
     background-color:#f8f0ed;
     border-width: 1px;
     border-right-style: solid;
-    border-color: orangered;
+    border-color: #F1D0B5;
 
+    .filtros{
+        width: 100%;
+    }
+
+    .filtroContendor{
+            
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    
 }
 
 .producto {
