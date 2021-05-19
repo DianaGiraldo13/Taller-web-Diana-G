@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f0ed;
+}
+.producto {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    &__imagenContenedor {
+        width: 600px;
+        height: 500px;
+        display: flex;
+        background-color: #ead1bd;
+        padding: auto;
+        align-items: center;
+
+        .producto__imagen {
+            width: 80%;
+            margin: auto;
+        }
+    }
+    &__informacion {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            width: 400px;
+            font-family: "perpetua";
+        }
+        .productoPrecio {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+    .botonComprar {
+        background-color: #ead1bd;
+        width: 179px;
+        height: 38px;
+        border-radius: 4px;
+        color: #692626, 100%;
+        font-family: "perpetua";
+        font-weight: 600;
+        border-color: none;
+    }
+}

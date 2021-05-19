@@ -56,21 +56,21 @@ function handleProductoitem(querySnapshot){
         const productos = document.createElement('div');
         productos.innerHTML = `
         
-        <a href ="#">
+        <a href ="./producto.html?id=${doc.id}&=${data.nombre}">
         <div class="imagenContainer">
-        <img class="producto__imagen" src="${data.imagenes[0].url}" alt="">
+        <img class="productos__imagen" src="${data.imagenes[0].url}" alt="">
         </div>
         
         
-        <div class="producto__info">
+        <div class="productos__info">
 
-            <h1 class="producto__titulo">
+            <h1 class="productos__titulo">
 
                 ${data.nombre}
 
             </h1>
 
-            <h3 class="producto__precio">
+            <h3 class="productos__precio">
                 
                 ${data.precio}
 
@@ -82,7 +82,7 @@ function handleProductoitem(querySnapshot){
         <img class="btnCarrito" src="./shop.png">
         `;
 
-        productos.classList.add('producto');
+        productos.classList.add('productos');
        
         
         list.appendChild(productos);

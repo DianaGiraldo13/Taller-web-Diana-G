@@ -121,6 +121,14 @@
           align-items: center;
 }
 
+h2 {
+  font-family: "perpetua";
+}
+
+p {
+  font-family: "perpetua";
+}
+
 .image__slide {
   width: 380px;
   height: 380px;
@@ -889,22 +897,22 @@ footer {
           flex-direction: column;
 }
 
-.producto {
+.productos {
   border: 1px;
   width: 30%;
   display: block;
   margin: 10px;
 }
 
-.producto .imagenContainer {
+.productos .imagenContainer {
   width: 100%;
 }
 
-.producto__imagen {
+.productos__imagen {
   width: 70%;
 }
 
-.producto__info {
+.productos__info {
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,7 +926,7 @@ footer {
           align-items: center;
 }
 
-.producto__titulo {
+.productos__titulo {
   margin: 0;
   margin-top: 5px;
   height: 60px;
@@ -930,17 +938,17 @@ footer {
   text-align: center;
 }
 
-.producto__precio {
+.productos__precio {
   margin: 0;
   padding-top: 3%;
   color: #3f3f3f;
 }
 
-.producto a {
+.productos a {
   text-decoration: none;
 }
 
-.producto .btnCarrito {
+.productos .btnCarrito {
   width: 25px;
   height: 25px;
 }
@@ -1079,6 +1087,69 @@ body {
   text-align: center;
   font-size: 25px;
   color: #3f3f3f;
+}
+
+body {
+  background-color: #f8f0ed;
+}
+
+.producto {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.producto__imagenContenedor {
+  width: 600px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ead1bd;
+  padding: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.producto__imagenContenedor .producto__imagen {
+  width: 80%;
+  margin: auto;
+}
+
+.producto__informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.producto__informacion p {
+  width: 400px;
+  font-family: "perpetua";
+}
+
+.producto__informacion .productoPrecio {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.producto .botonComprar {
+  background-color: #ead1bd;
+  width: 179px;
+  height: 38px;
+  border-radius: 4px;
+  color: #692626, 100%;
+  font-family: "perpetua";
+  font-weight: 600;
+  border-color: none;
 }
 
 @media (max-width: 768px) {

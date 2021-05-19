@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="contenedor__header">
+
+            <div class="contenedor__menu_mobile">
+                <img src="./MenuH.png">
+            </div>
+
+            <div class="menumobile">
+
+                <img class="cerrar" src="Cerrar.png" height="20" width="20">
+
+                <ul class="menumobileopciones">
+                    <li><a href="./inicioSesion.html">Ingresar</a></li>
+                    <li><a href="#">Cajita del mes</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="#">Cómo funciona</a></li>
+                    <li><a href="#">Suscríbete</a></li>
+                </ul>
+            </div>
+            <img class="logo" src="Logoestees.png" alt="" height="80" width="170">
+
+            <button class="imagen__carromobile">
+                <img src="shop.png" alt="" height="20" width="20">
+
+            </button>
+            <div class="topnav">
+                <a class="navitem" href="./inicioSesion.html"><strong>INGRESAR</strong></a>
+                <a class="navitem" href="#cajita"><strong>CAJITA DEL MES</strong></a>
+                <a class="navitem" href="./productos.html"><strong>PRODUCTOS</strong></a>
+                <a class="navitem" href="#comofunciona"><strong>CÓMO FUNCIONA</strong></a>
+                <a class="navitem" href="#suscríbete"><strong>SUSCRÍBETE</strong></a>
+
+                <button class="imagen__carro">
+                    <img src="shop.png" alt="" height="20" width="20">
+
+                </button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    <div class="producto">
+
+        <div class="producto__imagenContenedor">
+            <img src="Izquierda.png" alt="" height="40" width="40">
+            <img class="producto__imagen" src="" alt="">
+            <img src="Derecha.png" alt="" height="40" width="40">
+            
+        </div>
+
+        <div class="producto__informacion">
+
+            <h2 class="productoMarca"></h2>
+            <p class="productoNombre"></p>
+            <p class="productoPrecio"></p>
+            <h3>¿Qué es?</h3>
+            <p class="productoQueEs"></p>
+            <h3>Modo de uso:</h3>
+            <p class="productoModoDeUso"></p>
+            <h3>Por qué nos encanta:</h3>
+            <div class="productoEncanta"></div>
+
+
+
+            <div class="producto__tonos">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+
+            <button class="botonComprar">Agregar al carrito</button>
+
+
+        </div>
+
+
+    </div>
+
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+<script src="./script/firebase.js"></script>
+<script src="./script/producto.js"></script>
+
+</html>

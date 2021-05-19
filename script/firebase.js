@@ -1,12 +1,13 @@
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyC7_Qlo7bi2qQXlfccUfu4ZES9EU24BqQw",
-    authDomain: "boxycharm-a54e1.firebaseapp.com",
-    projectId: "boxycharm-a54e1",
-    storageBucket: "boxycharm-a54e1.appspot.com",
-    messagingSenderId: "929716530628",
-    appId: "1:929716530628:web:7f809ca121d2a41b1dc891"
+    apiKey: "AIzaSyBr2ahFw54Ml0E3RRDvnBnxqw3o8zIMFXw",
+    authDomain: "webdiana-3e043.firebaseapp.com",
+    projectId: "webdiana-3e043",
+    storageBucket: "webdiana-3e043.appspot.com",
+    messagingSenderId: "27607811760",
+    appId: "1:27607811760:web:bc5d5453ea17b46ff41d75"
   };
+  
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
