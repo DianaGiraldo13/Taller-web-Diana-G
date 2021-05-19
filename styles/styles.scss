@@ -14,7 +14,10 @@
 @import "registrarse";
 @import "producto";
 
+.hidden{
 
+  display: none;
+}
 @media (max-width: 768px){
 
   h1{

@@ -18,7 +18,7 @@ if(!id){
 db.collection("products").doc(id).get().then(function(doc){
 
     const data = doc.data();
-
+    
     imagen.src=data.imagenes[0].url
     marca.innerText=data.marca
     nombre.innerText = data.nombre
