@@ -14,15 +14,18 @@ const db = firebase.firestore();
 const storage = firebase.storage();
 const auth = firebase.auth();
 const cerrarSesion = document.querySelectorAll(".cerrarSesion")
+const iniciarSesion = document.querySelectorAll(".iniciarSesion")
 
 cerrarSesion.forEach(element => {
 
   element.addEventListener("click", () => {
+    auth.signOut().then(() => {
 
-    auth.signOut().then(console.log("sesion cerrada"))
-    
+      console.log("sesion cerrada")
+    })
   })
 })
+
 auth.onAuthStateChanged(
 
   (user) => {
@@ -32,16 +35,32 @@ auth.onAuthStateChanged(
       console.log("usuario")
       cerrarSesion.forEach(element => {
 
-       
+
         element.classList.remove("hidden")
-        
+
+      })
+
+      iniciarSesion.forEach(element => {
+
+
+        element.classList.add("hidden")
+
       })
 
     }
     else {
+
       console.log("no usuario")
+
       cerrarSesion.forEach(element => {
         element.classList.add("hidden")
+      })
+
+
+      iniciarSesion.forEach(element => {
+
+        element.classList.remove("hidden")
+
       })
     }
 
