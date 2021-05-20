@@ -7,6 +7,13 @@ body {
     width: 100%;
     justify-content: space-around;
 
+    .productoMarca{
+
+        font-family: "perpetua";
+        
+
+    }
+
     &__imagenContenedor {
         width: 600px;
         height: 500px;
@@ -27,6 +34,16 @@ body {
         p {
             width: 400px;
             font-family: "perpetua";
+            color: #3F3F3F;
+        }
+
+        h2{
+            color: #3F3F3F;
+            margin: 0;
+        }
+        h3{
+            color: #3F3F3F;
+            margin: 0;
         }
         .productoPrecio {
             font-weight: bold;

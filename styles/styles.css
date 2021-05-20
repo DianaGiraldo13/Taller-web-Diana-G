@@ -1103,6 +1103,10 @@ body {
       justify-content: space-around;
 }
 
+.producto .productoMarca {
+  font-family: "perpetua";
+}
+
 .producto__imagenContenedor {
   width: 600px;
   height: 500px;
@@ -1134,6 +1138,17 @@ body {
 .producto__informacion p {
   width: 400px;
   font-family: "perpetua";
+  color: #3F3F3F;
+}
+
+.producto__informacion h2 {
+  color: #3F3F3F;
+  margin: 0;
+}
+
+.producto__informacion h3 {
+  color: #3F3F3F;
+  margin: 0;
 }
 
 .producto__informacion .productoPrecio {
