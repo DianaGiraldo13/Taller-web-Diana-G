@@ -13,11 +13,6 @@ const flechaIzquierdaProducto= document.querySelector(".flechaIzquierdaProducto"
 let  productoActual;
 let imagenActual=0;
 
-
-
-
-
-
 flechaIzquierdaProducto.addEventListener("click",()=>{
     
      
@@ -29,7 +24,6 @@ flechaIzquierdaProducto.addEventListener("click",()=>{
          
     } else{
 
-        console.log("no funciona")
         imagenActual=0;
     }
     
@@ -54,9 +48,7 @@ flechaDerechaProducto.addEventListener("click",()=>{
 });
 
 function updateImage(){
-
     imagen.src=productoActual.imagenes[imagenActual].url
-
 }
 
 

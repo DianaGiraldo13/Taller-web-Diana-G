@@ -1,56 +1,14 @@
-const productos = [
-    {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: ' Mate Peach Kiss Lipstick',
-        precio: 44000,
-    },
-
-    {
-        img: '651986701308_1-removebg-preview.png',
-        titulo: ' Born This Way Foundation',
-        precio: 168000,
-    },
-
-    {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremmmmmm',
-        precio: 40000,
-    },
-
-    {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremeeeee',
-        precio: 49000,
-    },
-
-    {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremmmmmm',
-        precio: 40000,
-    },
-
-    {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremeeeee',
-        precio: 49000,
-    },
-
-    {
-        img: 'Doll_Face-removebg-preview.png',
-        titulo: 'loremmmmmm <br> hhdoidnahifkl',
-        precio: 40000,
-    },
-
-
-]
-//<a href ="./product.html?id=${doc.id}&=${data.name}">
-
 const list = document.querySelector('.list');
+const categorias = document.querySelector(".categorias");
+const filtro = document.querySelector(".filtros")
+const marcas = document.querySelector(".marcas")
+const precios = document.querySelector(".precios")
 
-function handleProductoitem(querySnapshot){
 
-        querySnapshot.forEach((doc)=>{
+function handleProductoitem(querySnapshot) {
 
+    list.innerHTML=""
+    querySnapshot.forEach((doc) => { 
         const data = doc.data();
 
         const productos = document.createElement('div');
@@ -80,15 +38,88 @@ function handleProductoitem(querySnapshot){
         </div>
         </a>
         <img class="btnCarrito" src="./shop.png">
-        `;
+        `
 
         productos.classList.add('productos');
-       
-        
         list.appendChild(productos);
 
-        })
-        
+    })
+
 
 }
-db.collection("products").get().then(handleProductoitem)
+filtro.addEventListener("change", () => {
+
+    let productsCollection = db.collection('products');
+    const categoriasArray = [];
+    const marcasArray=[]
+
+    categorias.categoria.forEach(function (checkbox) {
+
+        if (checkbox.checked) {
+
+            categoriasArray.push(checkbox.getAttribute("data-categoria"))
+        }
+
+    })
+
+  
+    marcas.marca.forEach(function (element){
+
+        if(element.checked){
+
+            marcasArray.push(element.value)
+            productsCollection = productsCollection.where('marca', '==', element.value);
+        }
+    })
+
+    if (marcasArray.length > 0) {
+
+        
+       
+    }
+    if (categoriasArray.length > 0) {
+
+        productsCollection = productsCollection.where('categoria', 'in', categoriasArray);
+       
+    }
+
+
+    precios.precio.forEach(function (element){
+
+        if(element.checked){
+            
+            switch(element.value){
+
+                case "1":
+
+                    productsCollection = productsCollection.where('precio', '>', 25000)
+                    productsCollection = productsCollection.where('precio', '<', 50000)
+                    
+                break;
+
+                case "2":
+
+                    productsCollection = productsCollection.where('precio', '>', 50000)
+                    productsCollection = productsCollection.where('precio', '<', 100000)
+                    
+                break;
+
+                case "3":
+
+                    productsCollection = productsCollection.where('precio', '>', 100000)
+                    productsCollection = productsCollection.where('precio', '<', 200000)
+                    
+                break;
+            }
+            
+        }
+    })
+
+    
+    productsCollection.get().then(handleProductoitem)
+})
+
+
+db.collection("products").get().then(handleProductoitem);
+
+

@@ -940,6 +940,7 @@ footer {
 
 .productos__precio {
   margin: 0;
+  margin-top: 20px;
   padding-top: 3%;
   color: #3f3f3f;
 }
