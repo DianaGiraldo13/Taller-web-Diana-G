@@ -4,19 +4,7 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-const botonmenu = document.querySelector(".contenedor__menu_mobile");
-const menu = document.querySelector(".menumobile");
-const cerrarmenu = document.querySelector(".cerrar");
 
-botonmenu.addEventListener("click",()=>{
-
-    menu.style.display="block"
-});
-
-cerrarmenu.addEventListener("click",()=>{
-
-    menu.style.display="none"
-})
 
 // Thumbnail image controls
 function currentSlide(n) {

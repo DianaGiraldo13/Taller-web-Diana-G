@@ -10,8 +10,6 @@ body {
     .productoMarca{
 
         font-family: "perpetua";
-        
-
     }
 
     &__imagenContenedor {
@@ -60,4 +58,37 @@ body {
         border-radius: 6px;
         font-family: "perpetua";
     }
+}
+
+@media (max-width: 768px) {
+
+.producto{
+
+    
+    flex-direction: column;
+
+    &__imagenContenedor{
+        margin: auto;
+        width: 80%;
+        height: 400px;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+
+        
+    }
+    .producto__imagen{
+
+        width: 80%;
+    }
+
+    &__informacion {
+        padding: 5px;
+    
+        p{
+            width: 90%;
+        }
+    }
+
+    margin-bottom:30px;
+}
 }

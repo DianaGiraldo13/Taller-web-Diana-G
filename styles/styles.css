@@ -92,6 +92,10 @@
   .topnav {
     display: none;
   }
+  .menumobileopciones {
+    margin: auto;
+    padding: inherit;
+  }
   .menumobileopciones li {
     list-style: none;
   }
@@ -762,8 +766,9 @@ p {
 .contenedor__footer {
   background-color: #f8f0ed;
   position: absolute;
+  margin-top: auto;
   width: 100%;
-  bottom: 2px;
+  bottom: 0;
   min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -837,6 +842,7 @@ footer {
 
 @media (max-width: 768px) {
   .contenedor__footer {
+    margin-top: 10px;
     padding: 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -845,7 +851,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 15px;
+    position: relative;
+    width: 100%;
   }
   .contenedor__footer .footer__basico {
     padding: 0px;
@@ -890,7 +897,6 @@ footer {
 }
 
 .productoAside {
-  width: 50%;
   background-color: #f8f0ed;
   border-width: 1px;
   padding: 5px;
@@ -967,6 +973,18 @@ footer {
 .productos .btnCarrito {
   width: 25px;
   height: 25px;
+}
+
+@media (max-width: 768px) {
+  .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 body {
@@ -1181,6 +1199,34 @@ body {
   background-color: #ECCBA3;
   border-radius: 6px;
   font-family: "perpetua";
+}
+
+@media (max-width: 768px) {
+  .producto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .producto__imagenContenedor {
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    margin-bottom: 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .producto .producto__imagen {
+    width: 80%;
+  }
+  .producto__informacion {
+    padding: 5px;
+  }
+  .producto__informacion p {
+    width: 90%;
+  }
 }
 
 .carritoContenedor {

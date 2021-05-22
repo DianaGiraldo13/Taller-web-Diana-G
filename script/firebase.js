@@ -19,6 +19,20 @@ const cerrarSesion = document.querySelectorAll(".cerrarSesion")
 const iniciarSesion = document.querySelectorAll(".iniciarSesion")
 const carritoNumero = document.querySelectorAll(".carritoNumero")
 
+const botonmenu = document.querySelector(".contenedor__menu_mobile");
+const menu = document.querySelector(".menumobile");
+const cerrarmenu = document.querySelector(".cerrar");
+
+botonmenu.addEventListener("click",()=>{
+
+    menu.style.display="block"
+});
+
+cerrarmenu.addEventListener("click",()=>{
+
+    menu.style.display="none"
+})
+
 let cart = [];
 let loggedUser = null;
 
