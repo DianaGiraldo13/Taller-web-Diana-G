@@ -62,6 +62,10 @@
   background-color: transparent;
 }
 
+.imagen__carro a {
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .contenedor__header {
     -webkit-box-pack: start;
@@ -75,6 +79,9 @@
     display: block;
     background-color: transparent;
     border: none;
+  }
+  .contenedor__header .imagen__carromobile a {
+    text-decoration: none;
   }
   .contenedor__header .logo {
     margin: auto;
@@ -1173,6 +1180,60 @@ body {
   font-family: "perpetua";
 }
 
+.carritoContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.carrito__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 30px;
+  margin-right: 8%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carrito__total .carrito__totalContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carrito__total .carrito__totalContenedor p {
+  font-weight: bold;
+}
+
+.carrito__total .carrito__totalContenedor h3 {
+  margin-right: 10px;
+}
+
+.carrito__total .btnPagar {
+  background: #ECCBA3;
+  padding: 10px;
+  font-family: "perpetua";
+  font-size: 16px;
+  font-weight: bold;
+  border-color: #ECCBA3;
+  width: 130px;
+}
+
 .carrito {
   margin: auto;
   width: 40%;
@@ -1245,6 +1306,52 @@ body {
 .carrito__lista .productoCarrito__precio {
   width: 25%;
   font-weight: bold;
+}
+
+.identificacionContenedor {
+  margin: auto;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  background-color: #EAD1BD;
+  opacity: 40;
+}
+
+.identificacionContenedor h2 {
+  text-align: center;
+}
+
+.identificacionContenedor p {
+  text-align: center;
+  font-family: "perpetua";
+  font-weight: bold;
+}
+
+.identificacionContenedor label {
+  font-family: "perpetua";
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.identificacionContenedor input {
+  width: 50%;
+  margin-bottom: 20px;
+  height: 35px;
+}
+
+.identificacionContenedor button {
+  width: 129px;
+  margin: auto;
+  background-color: #ECCBA3;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .hidden {

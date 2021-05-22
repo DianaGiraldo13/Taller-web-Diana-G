@@ -1,6 +1,9 @@
 const carritoLista = document.querySelector(".carrito__lista")
+const numeroTotal = document.querySelector(".totalNumero")
+
 
 mostrarCarrito =()=>{
+    console.log(cart)
     let total = 0;
     carritoLista.innerHTML =""
     cart.forEach((data)=>{
@@ -13,7 +16,7 @@ mostrarCarrito =()=>{
         
         <div class="productoCarrito__imagen">
 
-        <img src="${data.images[0]?.url}" alt="">
+        <img src="${data.imagenes[0]?.url}" alt="">
     </div>
 
     <div class="productoCarrito__informacion">
@@ -31,5 +34,5 @@ mostrarCarrito =()=>{
         carritoLista.appendChild(productoCarrito)
     
     })
-    
+    numeroTotal.innerText = "$"+ total
 }

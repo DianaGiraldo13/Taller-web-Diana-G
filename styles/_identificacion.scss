@@ -1,0 +1,41 @@
+.identificacionContenedor{
+
+    margin: auto;
+    margin-top:50px;
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    width:50%;
+    background-color: #EAD1BD;
+    opacity: 40;
+
+    h2{
+
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-family: "perpetua";
+        font-weight: bold;
+    }
+    label{
+
+        font-family: "perpetua";
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+    input{
+
+        width:50%;
+        margin-bottom: 20px;
+        height:35px;
+    }
+    button{
+
+        width:129px;
+        margin:auto;
+        background-color:#ECCBA3;
+        padding:10px;
+        margin-bottom: 20px;
+    }
+}

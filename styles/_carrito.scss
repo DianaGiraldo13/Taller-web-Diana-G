@@ -1,57 +1,86 @@
-.carrito{
+.carritoContenedor{
 
+    display: flex;
+    justify-content:space-evenly
+}
+.carrito__total {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-right: 8%;
+    align-items: center;
+
+    .carrito__totalContenedor {
+
+        display: flex;
+        p{
+            font-weight: bold;
+        }
+        align-items: center;
+        h3 {
+            margin-right: 10px;
+        }
+        
+    }
+    .btnPagar{
+
+        background: #ECCBA3;
+        padding: 10px;
+        font-family: "perpetua";
+        font-size: 16px;
+        font-weight: bold;
+        border-color: #ECCBA3;
+        width: 130px;
+
+    }
+}
+.carrito {
     margin: auto;
-    width:40%;
-    display:flex;
+    width: 40%;
+    display: flex;
     flex-direction: column;
 
-    &__titulos{
-        display:flex;
+    &__titulos {
+        display: flex;
         justify-content: space-between;
 
-        .producto{
-
-            width:25%
+        .producto {
+            width: 25%;
         }
-        .nombre{
-            width:50%;
+        .nombre {
+            width: 50%;
             text-align: center;
         }
 
-        .precio{
-            width:25%;
-            
+        .precio {
+            width: 25%;
         }
-
     }
-    &__lista{
-
-        display:flex;
+    &__lista {
+        display: flex;
         flex-direction: column;
-    
-        .productoCarrito{
-            display:flex;
+
+        .productoCarrito {
+            display: flex;
             margin-bottom: 10px;
             align-items: center;
-            width:100%;
+            width: 100%;
 
-            &__imagen{
-
-                width:25%;
-                img{
+            &__imagen {
+                width: 25%;
+                img {
                     width: 100%;
                 }
-
             }
-            &__informacion{
-
-                width:50%;
+            &__informacion {
+                width: 50%;
                 text-align: center;
                 font-weight: bold;
             }
-            &__precio{
-
-                width:25%;
+            &__precio {
+                width: 25%;
                 font-weight: bold;
             }
         }

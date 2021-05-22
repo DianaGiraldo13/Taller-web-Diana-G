@@ -63,7 +63,6 @@ const cargarCarrito = () => {
       carritoNumero.innerText = data.cart.length
 
       
-
       if (mostrarCarrito) {
         mostrarCarrito()
       }
@@ -117,7 +116,7 @@ auth.onAuthStateChanged(
 
       loggedUser = null;
       cart = [];
-
+      carritoNumero.innerText = cart.length;
       cerrarSesion.forEach(element => {
         element.classList.add("hidden")
       })
