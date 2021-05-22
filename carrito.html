@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-
 <body>
     <div class="contenedor">
 
@@ -56,42 +54,21 @@
 
 
     </div>
-    <div class="producto">
 
-        <div class="producto__imagenContenedor">
+    <div class="carrito">
 
-            <img class="flechaIzquierdaProducto" src="Izquierda.png" alt="" height="40" width="40">
-            <img class="producto__imagen" src="" alt="">
-            <img class="flechaDerechaProducto" src="Derecha.png" alt="" height="40" width="40">
-
+        <div class="carrito__titulos">
+            <h3 class="producto">Producto</h3>
+            <h3 class="nombre">Nombre</h3>
+            <h3 class="precio">Precio</h3>
         </div>
 
-        <div class="producto__informacion">
+        <div class="carrito__lista">
 
-            <h2 class="productoMarca"></h2>
-            <p class="productoNombre"></p>
-            <p class="productoPrecio"></p>
-            <h3>¿Qué es?</h3>
-            <p class="productoQueEs"></p>
-            <h3>Modo de uso:</h3>
-            <p class="productoModoDeUso"></p>
-            <h3 class="tituloEncanta">Por qué nos encanta:</h3>
-            <div class="productoEncanta"></div>
-
-            <div class="producto__tonos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-
-            <button class="botonComprar">Agregar al carrito</button>
-
-
+           
         </div>
-
-
     </div>
-
+    
 </body>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -104,6 +81,6 @@
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
 <script src="./script/firebase.js"></script>
-<script src="./script/producto.js"></script>
+<script src="./script/carrito.js"></script>
 
 </html>

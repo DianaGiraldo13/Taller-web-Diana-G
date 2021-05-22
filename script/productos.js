@@ -42,6 +42,17 @@ function handleProductoitem(querySnapshot) {
 
         productos.classList.add('productos');
         list.appendChild(productos);
+       const  btnCarrito = productos.querySelector(".btnCarrito")
+
+       btnCarrito.addEventListener("click",()=>{
+
+        
+        añadirCarrito({
+            ...data,
+            id: doc.id
+        })
+
+       })
 
     })
 

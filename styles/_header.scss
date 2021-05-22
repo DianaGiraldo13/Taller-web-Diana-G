@@ -12,8 +12,10 @@
 }
 
 .topnav {
+  display: flex;
   width: 60rem;
   margin-left: 2%;
+  align-items: center;
 }
 .contenedor__menu_mobile{
   width: 30px;
@@ -41,7 +43,7 @@
 }
 
 .imagen__carro {
-  margin-left: 5%;
+ 
   border: none;
   cursor: pointer;
   background-color:transparent;

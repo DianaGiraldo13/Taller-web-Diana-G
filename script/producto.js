@@ -10,12 +10,13 @@ const encanta = document.querySelector(".productoEncanta")
 const tituloEncanta = document.querySelector(".tituloEncanta");
 const flechaDerechaProducto= document.querySelector(".flechaDerechaProducto")
 const flechaIzquierdaProducto= document.querySelector(".flechaIzquierdaProducto")
+const botonComprar = document.querySelector(".botonComprar");
 let  productoActual;
 let imagenActual=0;
 
+
 flechaIzquierdaProducto.addEventListener("click",()=>{
     
-     
     if(imagenActual-- > 0){
 
         imagenActual-1
@@ -90,7 +91,13 @@ db.collection("products").doc(id).get().then(function(doc){
     }
     
     
+    botonComprar.addEventListener("click",()=>{
 
+        añadirCarrito({
+            ...data,
+            id: doc.id
+        })
+    })
     
 })
 

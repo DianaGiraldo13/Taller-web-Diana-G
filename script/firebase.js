@@ -13,8 +13,67 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const storage = firebase.storage();
 const auth = firebase.auth();
+const CART_COLLECTION = db.collection("carts")
 const cerrarSesion = document.querySelectorAll(".cerrarSesion")
 const iniciarSesion = document.querySelectorAll(".iniciarSesion")
+const carritoNumero = document.querySelector(".carritoNumero")
+
+let cart = [];
+let loggedUser = null;
+
+
+let IniciarSesion = (usuario) => {
+
+  loggedUser = usuario;
+  cargarCarrito()
+
+}
+
+
+const añadirCarrito = (producto) => {
+
+  if (loggedUser) {
+
+    cart.push(producto)
+
+    CART_COLLECTION.doc(loggedUser.uid).set({ cart })
+
+    carritoNumero.innerText = cart.length
+
+  }
+
+}
+
+let mostrarCarrito = null
+
+const cargarCarrito = () => {
+
+ 
+
+  if (loggedUser) {
+
+    CART_COLLECTION.doc(loggedUser.uid).get().then(snapshots => {
+
+      const data = snapshots.data()
+      if (!data) {
+
+        return;
+      }
+      cart = data.cart
+      carritoNumero.innerText = data.cart.length
+
+      
+
+      if (mostrarCarrito) {
+        mostrarCarrito()
+      }
+    })
+
+  }
+
+
+
+}
 
 cerrarSesion.forEach(element => {
 
@@ -22,6 +81,9 @@ cerrarSesion.forEach(element => {
     auth.signOut().then(() => {
 
       console.log("sesion cerrada")
+
+      cart = []
+      carritoNumero.innerText = cart.length
     })
   })
 })
@@ -32,7 +94,9 @@ auth.onAuthStateChanged(
 
     if (user) {
 
-      console.log("usuario")
+      IniciarSesion(user)
+
+
       cerrarSesion.forEach(element => {
 
 
@@ -50,7 +114,9 @@ auth.onAuthStateChanged(
     }
     else {
 
-      console.log("no usuario")
+
+      loggedUser = null;
+      cart = [];
 
       cerrarSesion.forEach(element => {
         element.classList.add("hidden")
@@ -62,8 +128,8 @@ auth.onAuthStateChanged(
         element.classList.remove("hidden")
 
       })
-    }
 
+    }
 
   }
 )
