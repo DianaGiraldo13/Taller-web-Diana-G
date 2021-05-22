@@ -16,6 +16,8 @@
 @import "carrito";
 @import "identificacion";
 
+
+
 .hidden{
 
   display: none;
@@ -35,6 +37,7 @@
 body{
   background-color: white;
     margin: 0;
+    height: 100vh;
 }
 html{
   scroll-behavior: smooth;

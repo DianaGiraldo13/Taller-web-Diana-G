@@ -14,9 +14,10 @@ const db = firebase.firestore();
 const storage = firebase.storage();
 const auth = firebase.auth();
 const CART_COLLECTION = db.collection("carts")
+const PEDIDOS_COLLECTION = db.collection("pedidos")
 const cerrarSesion = document.querySelectorAll(".cerrarSesion")
 const iniciarSesion = document.querySelectorAll(".iniciarSesion")
-const carritoNumero = document.querySelector(".carritoNumero")
+const carritoNumero = document.querySelectorAll(".carritoNumero")
 
 let cart = [];
 let loggedUser = null;
@@ -38,7 +39,12 @@ const añadirCarrito = (producto) => {
 
     CART_COLLECTION.doc(loggedUser.uid).set({ cart })
 
-    carritoNumero.innerText = cart.length
+    carritoNumero.forEach(element=>{
+
+      element.innerText = cart.length
+    })
+
+    
 
   }
 
@@ -47,11 +53,6 @@ const añadirCarrito = (producto) => {
 let mostrarCarrito = null
 
 const cargarCarrito = () => {
-
- 
-
-  if (loggedUser) {
-
     CART_COLLECTION.doc(loggedUser.uid).get().then(snapshots => {
 
       const data = snapshots.data()
@@ -59,8 +60,15 @@ const cargarCarrito = () => {
 
         return;
       }
+
       cart = data.cart
-      carritoNumero.innerText = data.cart.length
+      console.log(carritoNumero)
+
+      carritoNumero.forEach(element=>{
+
+        element.innerText = cart.length
+      })
+  
 
       
       if (mostrarCarrito) {
@@ -68,7 +76,7 @@ const cargarCarrito = () => {
       }
     })
 
-  }
+ 
 
 
 
@@ -82,7 +90,11 @@ cerrarSesion.forEach(element => {
       console.log("sesion cerrada")
 
       cart = []
-      carritoNumero.innerText = cart.length
+      carritoNumero.forEach(element=>{
+
+        element.innerText = cart.length
+      })
+  
     })
   })
 })
@@ -116,7 +128,11 @@ auth.onAuthStateChanged(
 
       loggedUser = null;
       cart = [];
-      carritoNumero.innerText = cart.length;
+      carritoNumero.forEach(element=>{
+
+        element.innerText = cart.length
+      })
+  
       cerrarSesion.forEach(element => {
         element.classList.add("hidden")
       })

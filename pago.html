@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificacion</title>
+    <title>Pago</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
 
+    
     <div class="contenedor">
 
         <div class="contenedor__header">
@@ -60,19 +61,23 @@
         </div>
 
     </div>
+    
 
-    <form class="identificacionContenedor formulario">
 
-        <h2>Identificación</h2>
+    <form class="identificacionContenedor formularioPago">
+
+        <h2>Pago con tarjeta </h2>
         <p>Solicitamos únicamente la información esencial para la finalización de la compra</p>
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" name="nombre" required>
-        <label for="cedula">Cédula</label>
-        <input type="number" name="cedula" required>
+        <label for="tarjeta">Número tarjeta de crédito</label>
+        <input type="number" name="tarjeta" required>
+        <label for="direccion">Dirección residencia</label>
+        <input type="text" name="direccion" required>
 
         <button type="submit">SIGUIENTE</button>
 
     </form>
+
+    
     <div class="contenedor__footer">
 
         <img class="imagen__logo" src="Logoestees.png" alt="" height="80" width="170">
@@ -82,7 +87,7 @@
             <footer>
 
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="./inicioSesion.html">INGRESA</a></li>
+                    <li class="list-inline-item iniciarSesion"><a href="./inicioSesion.html">INGRESA</a></li>
                     <li class="list-inline-item"><a href="#">CAJITA DEL MES</a></li>
                     <li class="list-inline-item"><a href="./productos.html">PRODUCTOS</a></li>
                     <li class="list-inline-item"><a href="#">CÓMO FUNCIONA</a></li>
@@ -114,11 +119,11 @@
 
     </div>
 </body>
-
 <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
-<script src="./script/firebase.js"></script>
+<script src="script/firebase.js"></script>
 <script src="./script/identificacion.js"></script>
+<script src="./script/pago.js"></script>
 </html>

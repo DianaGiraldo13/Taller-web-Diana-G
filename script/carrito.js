@@ -1,8 +1,9 @@
 const carritoLista = document.querySelector(".carrito__lista")
 const numeroTotal = document.querySelector(".totalNumero")
-
+const btnpagar = document.querySelector(".btnPagar");
 
 mostrarCarrito =()=>{
+
     console.log(cart)
     let total = 0;
     carritoLista.innerHTML =""
@@ -35,4 +36,9 @@ mostrarCarrito =()=>{
     
     })
     numeroTotal.innerText = "$"+ total
+
+    btnpagar.addEventListener("click",()=>{
+
+        window.location.href = "identificacion.html"
+    })
 }

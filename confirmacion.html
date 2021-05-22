@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificacion</title>
+    <title>Confirmacion</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
+    
     <div class="contenedor">
 
         <div class="contenedor__header">
@@ -61,18 +61,16 @@
 
     </div>
 
-    <form class="identificacionContenedor formulario">
 
-        <h2>Identificación</h2>
-        <p>Solicitamos únicamente la información esencial para la finalización de la compra</p>
-        <label for="nombre">Nombre Completo</label>
-        <input type="text" name="nombre" required>
-        <label for="cedula">Cédula</label>
-        <input type="number" name="cedula" required>
+    <div class="identificacionContenedor">
 
-        <button type="submit">SIGUIENTE</button>
+        <h2>Compra exitosa</h2>
+        <p>Gracias por confiar en nosotros, su compra ha sido almacenada exitosamente. En las próximas horas le enviaremos un correo con los datos y el recibo de su compra. </p>
+        <a href="productos.html">
+        <button onclick=productos.html class="btnPagar">Regresar</button>
+    </a>
+    </div>
 
-    </form>
     <div class="contenedor__footer">
 
         <img class="imagen__logo" src="Logoestees.png" alt="" height="80" width="170">
@@ -82,7 +80,7 @@
             <footer>
 
                 <ul class="list-inline">
-                    <li class="list-inline-item"><a href="./inicioSesion.html">INGRESA</a></li>
+                    <li class="list-inline-item iniciarSesion"><a href="./inicioSesion.html">INGRESA</a></li>
                     <li class="list-inline-item"><a href="#">CAJITA DEL MES</a></li>
                     <li class="list-inline-item"><a href="./productos.html">PRODUCTOS</a></li>
                     <li class="list-inline-item"><a href="#">CÓMO FUNCIONA</a></li>
@@ -113,12 +111,6 @@
 
 
     </div>
-</body>
 
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
-<script src="./script/firebase.js"></script>
-<script src="./script/identificacion.js"></script>
+</body>
 </html>

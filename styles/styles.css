@@ -761,6 +761,9 @@ p {
 
 .contenedor__footer {
   background-color: #f8f0ed;
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
   min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1324,6 +1327,10 @@ body {
   opacity: 40;
 }
 
+.identificacionContenedor a {
+  margin: auto;
+}
+
 .identificacionContenedor h2 {
   text-align: center;
 }
@@ -1370,6 +1377,7 @@ body {
 body {
   background-color: white;
   margin: 0;
+  height: 100vh;
 }
 
 html {
