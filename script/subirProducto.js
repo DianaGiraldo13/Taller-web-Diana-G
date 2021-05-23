@@ -1,83 +1,94 @@
 const formulario = document.querySelector(".formulario");
 const productImg = document.querySelector(".formularioImg");
-const imageFiles=[];
-
-console.log(formulario)
-//actualiza la vista previa de la imagen
-formulario.imagen.addEventListener("change", () => {
-
-    var reader = new FileReader();
-    const file = formulario.imagen.files[0];
-    reader.readAsDataURL(formulario.imagen.files[0]);
-    imageFiles.push(file);
-
-});
+const imageFiles = [];
 
 
-formulario.addEventListener("submit", (event) => {
+esAdmin = () => {
 
-    event.preventDefault();
+    if (loggedUser.admin) {
 
-    const product = {
-    nombre: formulario.nombre.value,
-    precio: parseFloat(formulario.precio.value),
-    categoria: formulario.categoria.value,
-    marca: formulario.marca.value,
-    descripcion: formulario.descripcion.value
+        //actualiza la vista previa de la imagen
+        formulario.imagen.addEventListener("change", () => {
 
-    }
+            var reader = new FileReader();
+            const file = formulario.imagen.files[0];
+            reader.readAsDataURL(formulario.imagen.files[0]);
+            imageFiles.push(file);
 
-    
-    db.collection("products").add(product).then(function (docref) {
+        });
 
-        const uploadPromises = [];
-        const downloadURLPromises = [];
-        imageFiles.forEach(function (file) {
 
-            let storageRef = firebase.storage().ref();
-            let fileRef = storageRef.child(`products/${docref.id}/${file.name}`);
+        formulario.addEventListener("submit", (event) => {
 
-            uploadPromises.push(fileRef.put(file))
+            event.preventDefault();
 
-        })
+            const product = {
+                nombre: formulario.nombre.value,
+                precio: parseFloat(formulario.precio.value),
+                categoria: formulario.categoria.value,
+                marca: formulario.marca.value,
+                descripcion: formulario.descripcion.value
 
-        Promise.all(uploadPromises).then(function (snapshots) {
+            }
 
-            snapshots.forEach(function (snapshot) {
 
-                downloadURLPromises.push(snapshot.ref.getDownloadURL())
+            db.collection("products").add(product).then(function (docref) {
 
-            });
+                const uploadPromises = [];
+                const downloadURLPromises = [];
+                imageFiles.forEach(function (file) {
 
-            Promise.all(downloadURLPromises).then(function (dowloadURL) {
-                const imagenes= []
+                    let storageRef = firebase.storage().ref();
+                    let fileRef = storageRef.child(`products/${docref.id}/${file.name}`);
 
-                dowloadURL.forEach(function (url,index){
+                    uploadPromises.push(fileRef.put(file))
 
-                    imagenes.push({
+                })
 
-                        url:url,
-                        ref:snapshots[index].ref.fullPath
+                Promise.all(uploadPromises).then(function (snapshots) {
+
+                    snapshots.forEach(function (snapshot) {
+
+                        downloadURLPromises.push(snapshot.ref.getDownloadURL())
+
                     });
 
+                    Promise.all(downloadURLPromises).then(function (dowloadURL) {
+                        const imagenes = []
+
+                        dowloadURL.forEach(function (url, index) {
+
+                            imagenes.push({
+
+                                url: url,
+                                ref: snapshots[index].ref.fullPath
+                            });
+
+                        })
+
+                        db.collection("products").doc(docref.id).update({
+
+                            imagenes: imagenes
+                        }).then(function () {
+
+                            console.log("producto agregado")
+                        })
+
+
+                    })
+
                 })
+            }).catch(function (error) {
 
-                db.collection("products").doc(docref.id).update({
-
-                    imagenes:imagenes
-                }).then(function (){
-
-                    console.log("producto agregado")
-                })
-
-                
+                console.log(error)
             })
 
-        })
-    }).catch(function (error){
 
-        console.log(error)
-    })
-    
+        });
+    }
+    else{
 
-});
+        location.href="/productos.html"
+    }
+
+}

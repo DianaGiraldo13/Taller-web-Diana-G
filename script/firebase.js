@@ -34,6 +34,7 @@ cerrarmenu.addEventListener("click",()=>{
 })
 
 let cart = [];
+let esAdmin=null;
 let loggedUser = null;
 
 
@@ -41,6 +42,8 @@ let IniciarSesion = (usuario) => {
 
   loggedUser = usuario;
   cargarCarrito()
+
+  if(esAdmin) esAdmin()
 
 }
 
@@ -51,7 +54,7 @@ const añadirCarrito = (producto) => {
 
     cart.push(producto)
 
-    CART_COLLECTION.doc(loggedUser.uid).set({ cart })
+    CART_COLLECTION.doc(loggedUser.id).set({ cart })
 
     carritoNumero.forEach(element=>{
 
@@ -67,7 +70,7 @@ const añadirCarrito = (producto) => {
 let mostrarCarrito = null
 
 const cargarCarrito = () => {
-    CART_COLLECTION.doc(loggedUser.uid).get().then(snapshots => {
+    CART_COLLECTION.doc(loggedUser.id).get().then(snapshots => {
 
       const data = snapshots.data()
       if (!data) {
@@ -76,7 +79,7 @@ const cargarCarrito = () => {
       }
 
       cart = data.cart
-      console.log(carritoNumero)
+      
 
       carritoNumero.forEach(element=>{
 
@@ -88,6 +91,7 @@ const cargarCarrito = () => {
       if (mostrarCarrito) {
         mostrarCarrito()
       }
+      if(esAdmin) esAdmin()
     })
 
  
@@ -119,7 +123,13 @@ auth.onAuthStateChanged(
 
     if (user) {
 
-      IniciarSesion(user)
+
+      console.log(user)
+      db.collection("usuarios").doc(user.uid).get().then((usuario)=>{
+
+        IniciarSesion(usuario.data())
+      })
+      
 
 
       cerrarSesion.forEach(element => {

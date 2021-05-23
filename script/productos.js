@@ -22,7 +22,9 @@ function handleProductoitem(querySnapshot) {
         <img class="productos__imagen" src="${data.imagenes[0].url}" alt="">
         </div>
         
-        
+       
+        </a>
+         
         <div class="productos__info">
 
             <h1 class="productos__titulo">
@@ -39,7 +41,6 @@ function handleProductoitem(querySnapshot) {
 
 
         </div>
-        </a>
         <img class="btnCarrito" src="./shop.png">
         `
 
@@ -63,42 +64,51 @@ function handleProductoitem(querySnapshot) {
 }
 
 
+ordenar.addEventListener("change", () => {
+  
+    let productsCollection = db.collection('products');
+    if (ordenar.ordenarProductos.value) {
+
+        switch (ordenar.ordenarProductos.value) {
+
+            case "1":
+
+            productsCollection=productsCollection.orderBy("precio","asc")
+            
+                break;
+
+            case "2":
+                productsCollection=productsCollection.orderBy("precio","desc")
+                break;
+        }
+
+        productsCollection.get().then(handleProductoitem)
+    }
+})
+
 
 
 let cambio = false;
 filtro.addEventListener("change", () => {
 
-    ordenar.addEventListener("change", () => {
-  
-
-        if (ordenar.ordenarProductos.value) {
-    
-            switch (ordenar.ordenarProductos.value) {
-    
-                case "1":
-    
-                productsCollection=productsCollection.orderBy("precio","asc")
-                
-                    break;
-    
-                case "2":
-                    productsCollection=productsCollection.orderBy("precio","desc")
-                    break;
-            }
-    
-            productsCollection.get().then(handleProductoitem)
-        }
-    })
 
     let productsCollection = db.collection('products');
-    const categoriasArray = [];
+    
     const marcasArray = []
 
     categorias.categoria.forEach(function (checkbox) {
 
         if (checkbox.checked) {
 
-            productsCollection = productsCollection.where('categoria', '==', checkbox.value)
+            if(checkbox.value==""){
+
+            }
+            else{
+                productsCollection = productsCollection.where('categoria', '==', checkbox.value)
+
+            }
+
+           
         }
 
     })
@@ -135,7 +145,7 @@ filtro.addEventListener("change", () => {
                 case "1":
                   
                     productsCollection = productsCollection.where('precio', '>=', 25000)
-                    productsCollection = productsCollection.where('precio', '<=', 50000).orderBy("precio")
+                    productsCollection = productsCollection.where('precio', '<=', 50000)
                     
 
                     break;
@@ -144,14 +154,14 @@ filtro.addEventListener("change", () => {
                     
                   
                     productsCollection = productsCollection.where('precio', '>=', 50000)
-                    productsCollection = productsCollection.where('precio', '<=', 100000).orderBy("precio")
+                    productsCollection = productsCollection.where('precio', '<=', 100000)
                   
 
                     break;
 
                 case "3":
                    
-                    productsCollection = productsCollection.where('precio', '>=', 100000).orderBy("precio")
+                    productsCollection = productsCollection.where('precio', '>=', 100000)
 
                     break;
             }
@@ -190,6 +200,8 @@ ordenar.addEventListener("change", () => {
     }
    
 })
+
+
 
 
 db.collection("products").get().then(handleProductoitem);

@@ -16,7 +16,8 @@ formularioPago.addEventListener("submit", (event) => {
 
         window.location.href = "confirmacion.html"
 
-        CART_COLLECTION.doc(loggedUser.uid).set({ cart: [] })
+        CART_COLLECTION.doc(loggedUser.id).set({ cart: [] })
+        cart=[]
     })
 
 })

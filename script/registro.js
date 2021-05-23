@@ -25,7 +25,7 @@ registrarse.addEventListener("click", () => {
                     nombre: nombre.value,
                     correo: correo.value
                 }
-                db.collection("usuarios").doc(usuario.uid).set(usuario).then(() => {
+                db.collection("usuarios").doc(usuario.id).set(usuario).then(() => {
 
                     window.location.href = "productos.html"
                 })

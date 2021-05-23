@@ -7,6 +7,7 @@
     width: 100%;
     padding-top: 5%;
     background-color: #f8f0ed;
+    justify-content: center;
 }
 
 .ordenar{
@@ -52,17 +53,19 @@
 
 .productos {
     border: 1px;
-    width: 30%;
+    width: 25%;
     display: block;
     margin: 10px;
 
     .imagenContainer{
 
         width: 100%;   
+        height: 200px;
     }
 
     &__imagen {
         width: 70%;
+       
     }
 
     &__info {

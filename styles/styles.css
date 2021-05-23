@@ -887,6 +887,9 @@ footer {
   width: 100%;
   padding-top: 5%;
   background-color: #f8f0ed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ordenar {
@@ -938,13 +941,14 @@ footer {
 
 .productos {
   border: 1px;
-  width: 30%;
+  width: 25%;
   display: block;
   margin: 10px;
 }
 
 .productos .imagenContainer {
   width: 100%;
+  height: 200px;
 }
 
 .productos__imagen {
