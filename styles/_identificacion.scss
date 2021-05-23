@@ -42,3 +42,18 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .identificacionContenedor{
+
+        width: 80%;
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        input{
+            width: 90%;
+        }
+    }
+
+}

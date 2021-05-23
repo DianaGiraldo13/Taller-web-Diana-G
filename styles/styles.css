@@ -768,7 +768,6 @@ p {
   position: absolute;
   margin-top: auto;
   width: 100%;
-  bottom: 0;
   min-height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,7 +841,7 @@ footer {
 
 @media (max-width: 768px) {
   .contenedor__footer {
-    margin-top: 10px;
+    background-color: #ead1bd;
     padding: 0%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -888,6 +887,25 @@ footer {
   width: 100%;
   padding-top: 5%;
   background-color: #f8f0ed;
+}
+
+.ordenar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+}
+
+.ordenar label {
+  font-size: 18px;
+}
+
+.ordenar select {
+  margin-left: 10px;
+  padding: 2px;
 }
 
 .productoMain {
@@ -984,6 +1002,14 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .productos {
+    width: 80%;
+  }
+  .ordenar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1236,6 +1262,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  height: 100%;
 }
 
 .carrito__total {
@@ -1284,7 +1311,6 @@ body {
 }
 
 .carrito {
-  margin: auto;
   width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1357,6 +1383,26 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .carritoContenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carritoContenedor .carrito {
+    width: 80%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .identificacionContenedor {
   margin: auto;
   margin-top: 50px;
@@ -1407,6 +1453,17 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .identificacionContenedor {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .identificacionContenedor input {
+    width: 90%;
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -1421,7 +1478,7 @@ body {
 }
 
 body {
-  background-color: white;
+  background-color: #F8F0ED;
   margin: 0;
   height: 100vh;
 }

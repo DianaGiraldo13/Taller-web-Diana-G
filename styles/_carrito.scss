@@ -1,7 +1,8 @@
 .carritoContenedor{
 
     display: flex;
-    justify-content:space-evenly
+    justify-content:space-evenly;
+    height:100%;
 }
 .carrito__total {
     
@@ -37,7 +38,7 @@
     }
 }
 .carrito {
-    margin: auto;
+   
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -83,6 +84,21 @@
                 width: 25%;
                 font-weight: bold;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .carritoContenedor{
+
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+
+        .carrito{
+            width: 80%;
+            justify-content: space-around;
         }
     }
 }

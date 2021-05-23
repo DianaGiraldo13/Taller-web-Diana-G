@@ -69,8 +69,16 @@
         </div>
 
     </div>
+    <form class="ordenar">
+        
+        <label for="">Ordenar por:</label>
+        <select name="ordenarProductos" id="">
+            <option value="">Relevante</option>
+            <option value="1">Precio: menor a mayor</option>
+            <option value="2">Precio: mayor a menor </option>
+        </select>
+    </form>
     <div class="productoMain">
-
 
         <aside class="productoAside">
 
@@ -82,22 +90,22 @@
 
                     <div class="categoriaContenedor">
 
-                        <input data-categoria="labios" type="checkbox" name="categoria" value="labios">
+                        <input data-categoria="labios" type="radio" name="categoria" value="labios">
                         <label for="labios">Labios</label>
 
                     </div>
                     <div class="categoriaContenedor">
-                        <input data-categoria="rostro" type="checkbox" name="categoria" value="rostro">
+                        <input data-categoria="rostro" type="radio" name="categoria" value="rostro">
                         <label for="rostro">Rostro</label>
 
                     </div>
                     <div class="categoriaContenedor">
-                        <input data-categoria="ojos" type="checkbox" name="categoria" value="ojos">
+                        <input data-categoria="ojos" type="radio" name="categoria" value="ojos">
                         <label for="ojos">Ojos</label>
 
                     </div>
                     <div class="categoriaContenedor">
-                        <input data-categoria="brochas" type="checkbox" name="categoria" value="brochas">
+                        <input data-categoria="brochas" type="radio" name="categoria" value="brochas">
                         <label for="brochas">Brochas y aplicadores</label>
 
                     </div>
