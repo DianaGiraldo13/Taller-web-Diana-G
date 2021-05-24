@@ -10,33 +10,49 @@ administrador=()=>{
     
                 
                 const ordenes = document.createElement("div");
-               
+                ordenes.classList.add("orden")
                 const orden = doc.data()
+               
     
                 orden.idproductos.forEach((id) => {
                     
-                    console.log(id)
-                    db.collection("productos").doc(id).get().then((snapshot) => {
-    
-                        const producto = snapshot.data()
-                        console.log(producto)
+                    
+                    db.collection('products').doc(id).get().then((doc) => {
+                        
+                        
+                        const producto = doc.data()
+                       
                         const productoCarrito = document.createElement("div")
     
                         productoCarrito.innerHTML = `
                         
-                        <div class="cartProduct__image">
-                        <img src="${producto.imagenes[0]?.url}"
-                            >
-                                </div>
-                        <div class="cartProduct__info">
-                            <h2>${producto.nombre}</h2>
+                        <div class="imagenContainer">
+                        <img class="productos__imagen" src="${producto.imagenes[0].url}" alt="">
                         </div>
-                        <div class="cartProduct__price">
-                            <p>$ ${producto.precio}</p>
+                        
+                       
+                        </a>
+                         
+                        <div class="productos__info">
+                
+                            <h3 class="productos__titulo">
+                
+                                ${producto.nombre}
+                
+                            </h3>
+                
+                            <h3 class="productos__precio">
+                                
+                                ${producto.precio}
+                
+                            </h3>
+                
+                
                         </div>
-                    </div>
+                        
                         `
-                        productoCarrito.classList.add("productoCarrito");
+                        
+                        productoCarrito.classList.add("productos");
                         ordenes.appendChild(productoCarrito);
                     })
     

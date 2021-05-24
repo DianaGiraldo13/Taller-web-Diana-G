@@ -1,0 +1,24 @@
+.orden{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .productos{
+
+        width: 20%;
+
+        .imagenContainer{
+
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    
+}
+
+
+.productos__titulo{
+    height: unset;
+}
