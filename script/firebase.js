@@ -68,6 +68,7 @@ const añadirCarrito = (producto) => {
 }
 
 let mostrarCarrito = null
+let administrador=null
 
 const cargarCarrito = () => {
     CART_COLLECTION.doc(loggedUser.id).get().then(snapshots => {
@@ -92,6 +93,8 @@ const cargarCarrito = () => {
         mostrarCarrito()
       }
       if(esAdmin) esAdmin()
+
+      if(administrador) administrador()
     })
 
  
